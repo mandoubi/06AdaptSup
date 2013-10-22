@@ -1,0 +1,27 @@
+!!! 5
+html(lang="fr")
+	head
+		meta(charset='utf-8')
+		if page && page.title
+			title= page.title
+		else if site && site.title
+			title= site.title
+		else
+			title Accueil
+		//- != getBlock('meta').toHTML()
+		//- != getBlock('styles').add(['/styles/main.css']).toHTML()
+		link(href="cdn/accueil.css",rel="stylesheet")
+	body
+		h1 Bienvenue sur Dys'doc
+		//- Accessiscan / Dys'learn / AdaptSup
+		a(href="eleve/") Élève
+			p Accès destiné aux élèves.
+				br
+				br
+				|L'ergonomie est optimisée pour faciliter l'apprentissage chez les dyspraxique, et autre dys*.
+		a(href="tuteur/") Tuteur
+			p Accès destiné aux tuteurs
+				br
+				br
+				| Ici, l'interface est conçu pour faciliter l'optimisation des contenus scannés afin de les rendre accessible aux élèves.
+				| La personnalisation des règles d'affichages des élèves peut être faite par les tuteurs ou les élèves selon les paramètres du profil élève.

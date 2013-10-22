@@ -1,0 +1,44 @@
+* {
+  font-family: Verdana;
+}
+h1 {
+  text-align: center;
+  margin: 10%;
+}
+a {
+  display: block;
+  float: left;
+  width: 30%;
+  padding: 5% 0;
+  margin: 5% 100px;
+  background: #cdf;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: #000 2px 2px 2px;
+  position: relative;
+}
+a:hover {
+  background: #def;
+}
+a:active {
+  background: #bce;
+}
+a p {
+  display: none;
+}
+a:hover p {
+  display: block;
+  position: absolute;
+  top: 100%;
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  text-shadow: none;
+  padding: 5%;
+  width: 90%;
+  background-color: #eef;
+  border-radius: 20px;
+}
