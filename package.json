@@ -1,0 +1,45 @@
+{
+  "author": "CNED by Millicent Billette, bliotux by Jean Millerat",
+  "name": "dys-doc",
+  "description": "progiciel en ligne d'accessibilisation de documents scannés a destination des dys*",
+  "keywords": [
+    "accessibilité",
+    "accessibility",
+    "scan",
+    "learning",
+    "e-learning",
+    "dyslexie",
+    "dyslexique",
+    "dyslexy",
+    "dyslexic",
+    "dyspraxia",
+    "dyspraxie",
+    "dyspraxique",
+    "autiste",
+    "autisme",
+    "autism",
+    "autistic"
+  ],
+  "version": "0.0.1",
+  "license": "AGPL3",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/GammaNu/dys-doc.git"
+  },
+  "homepage": "http://gammanu.github.io/dys-doc",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "colors": "~0.6.2",
+    "watch": "~0.8.0",
+    "mocha": "~1.13.0",
+    "chai": "~1.8.0",
+    "glob": "~3.2.6",
+    "q": "~0.9.7",
+    "mkdirp": "~0.3.5",
+    "rimraf": "~2.2.2",
+    "stylus": "~0.38.0",
+    "nib": "~1.0.1",
+    "jade": "~0.35.0"
+  }
+}

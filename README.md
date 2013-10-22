@@ -1,7 +1,7 @@
 Dys'doc
 =======
 
-Dys'doc, Dys'Doc, Dys*doc, Dys-doc est une plateforme à double objectif :
+Dys'doc, Dys'Doc, Dys*doc, Dys-doc (le nom n'est pas définitif) est une plateforme à double objectif :
 - Transformer simplement et rapidement des documents scannés en documents structurés et accessible tout en mutualisant les efforts d'accéssibilisation.
 - Consulter les documents rendu accessible depuis une interface à l'ergonomie conçu pour faciliter l'apprentissage chez les dyspraxique, dyslexique et autre dys* ou autistes, et ce, à l'aide de profils utilisateurs configurés pour correspondre au mieux aux besoins de chacun.
 
@@ -25,3 +25,6 @@ Fonctions principales
  - lecture des documents mis à disposition dans une interface spécialement adapté selon le profil de l'élève pour faciliter son apprentissage.
 
 
+## Liens utiles
+- [Maquette en ligne](http://gammanu.github.io/dys-doc)
+- [Signaler un problème ou faire une suggestion](https://github.com/GammaNu/dys-doc/issues)
