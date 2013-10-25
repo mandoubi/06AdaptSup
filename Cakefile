@@ -16,7 +16,7 @@ nib							= require 'nib'
 require 'colors'
 
 #config
-fichierATester 	= 'lib.js'
+fichierATester 	= 'app' # .js ajouté automatiquement
 
 appSourceDir		= 'src/'
 appCompiledDir	= 'build/'
