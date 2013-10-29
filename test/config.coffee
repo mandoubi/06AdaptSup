@@ -1,4 +1,7 @@
-require('chai').should()
+chai = require 'chai'
+chaiAsPromised = require 'chai-as-promised'
+
+chai.use(chaiAsPromised).should()
 
 ###
 Reporters mocha pour le cakefile
