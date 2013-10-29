@@ -1,17 +1,16 @@
 
-cl							= require './src/cakeLib'
+cl										= require './src/cakeLib'
 
 #config
-cl.fichierATester 	= 'cakeLib' # .js ajouté automatiquement
-
-cl.appSourceDir		= 'src/'
-cl.appCompiledDir	= 'build/'
-cl.specDir					= 'test/spec/'
-cl.specCompiledDir	= 'build/test/'
-cl.testConfigFile	= 'test/config.coffee'
-cl.oneShotReporter	= 'nyan' #"progress"
-cl.watchReporter		= 'min' #"dot"
-cl.runTestDelay		= 500 # latence entre la détection d'un fichier modifié et l'execution des test (pour éviter les test en cascade lors des enregistrement de masse)
+cl.appSourceDir				= 'src/'
+cl.appCompiledDir			= 'build/'
+cl.appTestablePattern	= cl.appCompiledDir + 'cakeLib.js' #'lib/'
+cl.specDir						= 'test/spec/'
+cl.specCompiledDir		= 'build/test/'
+cl.testConfigFile			= 'test/config.coffee'
+cl.oneShotReporter		= 'nyan' #"progress"
+cl.watchReporter			= 'min' #"dot"
+cl.runTestDelay				= 500 # latence entre la détection d'un fichier modifié et l'execution des test (pour éviter les test en cascade lors des enregistrement de masse)
 
 # formats géré
 cl.reglesDeConversion =

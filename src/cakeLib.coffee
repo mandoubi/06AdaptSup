@@ -24,6 +24,7 @@ debug = false
 exports.fichierATester 			= 'cakeLib' # .js ajouté automatiquement
 exports.appSourceDir				= ''
 exports.appCompiledDir			= ''
+exports.appTestablePattern	= '' # motif de sélection des fichiers contenant le code métier à recharger avant chaque execution de test.
 exports.specDir							= ''
 exports.specCompiledDir			= ''
 exports.testConfigFile			= ''
@@ -44,32 +45,28 @@ exports.testTask = (options, reporter=exports.oneShotReporter)->
 	setGlobalOptions options
 	util.log 'Préparation des tests'.cyan if debug
 	require ps.resolve '.', exports.testConfigFile
-
-	# TODO: arboressance applicative à inclure pour lancer les test dessus.
-	delete require.cache[ps.resolve('.', exports.appCompiledDir+exports.fichierATester+'.js')] # chemin absolue nécessaire
-	require ps.resolve '.', exports.appCompiledDir+exports.fichierATester+'.js'
-
-	mocha = new Mocha
-	mocha.reporter reporter
-	testFilesPattern = exports.specCompiledDir+'**/*.js'
-	util.log 'Liste les fichiers répondant au motif '.cyan + testFilesPattern if debug
-	glob testFilesPattern, (err, fileList)->
-		for file in fileList
-			util.log 'spec : '.cyan + file if debug
-			delete require.cache[ps.resolve('.', file)] # chemin absolue nécessaire
-			mocha.addFile file
-		util.log 'Execution des tests'.cyan if verbose
-		runner = mocha.run ->
-			util.log 'Tests terminés'.cyan if verbose
-			q.resolve()
+	treeDo(exports.appTestablePattern, reloadIt).then ->
+		mocha = new Mocha
+		mocha.reporter reporter
+		testFilesPattern = exports.specCompiledDir+'**/*.js'
+		util.log 'Liste les fichiers répondant au motif '.cyan + testFilesPattern if debug
+		glob testFilesPattern, (err, fileList)->
+			for file in fileList
+				util.log 'spec : '.cyan + file if debug
+				delete require.cache[ps.resolve('.', file)] # chemin absolue nécessaire
+				mocha.addFile file
+			util.log 'Execution des tests'.cyan if verbose
+			runner = mocha.run ->
+				util.log 'Tests terminés'.cyan if verbose
+				q.resolve()
 	q.promise
 
 exports.buildTask = (options)->
 	q = Q.defer()
 	setGlobalOptions options
 	Q.all([
-		compileTree exports.specDir, exports.specCompiledDir
-		compileTree exports.appSourceDir, exports.appCompiledDir
+		treeDo exports.specDir+'**', compileIt, [exports.specDir, exports.specCompiledDir]
+		treeDo exports.appSourceDir+'**', compileIt, [exports.appSourceDir, exports.appCompiledDir]
 	]).done ->
 		util.log 'Compilation terminée'.cyan
 		q.resolve()
@@ -125,18 +122,33 @@ rmAppFile = (file) ->
 		untestedChange = true
 		setTimeout runTestIfChange, exports.runTestDelay
 
-compileTree = (originFolder, destinationFolder) ->
+treeDo = (scanPattern, action, actionParamTab=[]) ->
 	q = Q.defer()
-	pattern = originFolder+'**'
-	util.log 'liste les fichiers répondant au motif '.cyan + pattern if debug
-	glob pattern, (err, fileList)->
+	actionName = (action+'').split('{')[0]
+	util.log 'execute '.yellow + actionName + ' sur chaque fichiers répondant au motif : '.yellow + scanPattern if debug
+	glob scanPattern, (err, fileList)->
 		q.reject err if err
 		promesse = []
 		for file in fileList
-			promesse.push compileIt(file, originFolder, destinationFolder)
+			# clonning actionParamTab
+			params = [file]
+			for i in [0..actionParamTab.length-1]
+				params.push actionParamTab[i]
+			# queing actions
+			promesse.push action.apply null, params
 		Q.all(promesse).then ->
-				q.resolve originFolder + ' -> ' + destinationFolder + ' OK'
+			q.resolve actionName
 	q.promise
+
+reloadIt = (file) ->
+	q = Q.defer()
+	file = ps.resolve '.', file
+	delete require.cache[file]
+	require file
+	util.log file + ' rechargé'.yellow if debug
+	q.resolve file
+	q.promise
+
 
 compileIt = (srcFile, originFolder=exports.appSourceDir, destinationFolder=exports.appCompiledDir) ->
 	#path.extname file
