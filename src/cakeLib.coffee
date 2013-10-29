@@ -1,5 +1,5 @@
 fs							= require 'fs'
-ps							= require 'path'
+path						= require 'path'
 {exec,spawn}		= require 'child_process'
 util						= require 'util'
 watch						= require 'watch'
@@ -44,7 +44,7 @@ exports.testTask = (options, reporter=exports.oneShotReporter)->
 	q = Q.defer()
 	setGlobalOptions options
 	util.log 'Préparation des tests'.cyan if debug
-	require ps.resolve '.', exports.testConfigFile
+	require path.resolve '.', exports.testConfigFile
 	treeDo(exports.appTestablePattern, reloadIt).then ->
 		mocha = new Mocha
 		mocha.reporter reporter
@@ -53,7 +53,7 @@ exports.testTask = (options, reporter=exports.oneShotReporter)->
 		glob testFilesPattern, (err, fileList)->
 			for file in fileList
 				util.log 'spec : '.cyan + file if debug
-				delete require.cache[ps.resolve('.', file)] # chemin absolue nécessaire
+				delete require.cache[path.resolve('.', file)] # chemin absolue nécessaire
 				mocha.addFile file
 			util.log 'Execution des tests'.cyan if verbose
 			runner = mocha.run ->
@@ -87,8 +87,20 @@ exports.coffee2js = (srcContent, srcFileName) ->
 	q.promise
 exports.jade2html = (srcContent, srcFileName)->
 	q = Q.defer()
-	buff = jade.compile srcContent               # create buffer of jade content
-	q.resolve buff({ title: 'async-flow' })      # jade => html
+	global.siteBase = path.resolve '.'
+	try
+		jade.render srcContent, {
+			filename: srcFileName
+			pretty: true
+			globals:{
+				'siteBase': siteBase
+			}
+		}, (err, html)->
+			if err
+				util.log (e+'').red
+				throw err;
+			q.resolve html
+	catch e then util.log (e+'').red
 	q.promise
 exports.stylus2css = (srcContent, srcFileName)->
 	q = Q.defer()
@@ -142,7 +154,7 @@ treeDo = (scanPattern, action, actionParamTab=[]) ->
 
 reloadIt = (file) ->
 	q = Q.defer()
-	file = ps.resolve '.', file
+	file = path.resolve '.', file
 	delete require.cache[file]
 	require file
 	util.log file + ' rechargé'.yellow if debug

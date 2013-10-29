@@ -10,7 +10,7 @@ cl.specCompiledDir		= 'build/test/'
 cl.testConfigFile			= 'test/config.coffee'
 cl.oneShotReporter		= 'nyan' #"progress"
 cl.watchReporter			= 'min' #"dot"
-cl.runTestDelay				= 500 # latence entre la détection d'un fichier modifié et l'execution des test (pour éviter les test en cascade lors des enregistrement de masse)
+cl.runTestDelay				= 200 # latence entre la détection d'un fichier modifié et l'execution des test (pour éviter les test en cascade lors des enregistrement de masse)
 
 # formats géré
 cl.reglesDeConversion =
