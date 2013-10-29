@@ -1,74 +1,41 @@
-#
-# Module Dependencies
-#
-{exec} = require 'child_process'
-fs     = require 'fs'
-path   = require 'path'
-jade   = require 'jade'
-stylus = require 'stylus'
-nib    = require 'nib'
 
-# Output directory
-OUTPUT = path.resolve path.join('.', 'build')
+cl										= require './src/cakeLib'
 
-# Source Files
-files = [
-  'src/www/index.jade'
-  'src/www/cdn/accueil.styl'
-]
+#config
+cl.appSourceDir				= 'src/'
+cl.appCompiledDir			= 'build/'
+cl.appTestablePattern	= cl.appCompiledDir + 'cakeLib.js' #'lib/'
+cl.specDir						= 'test/spec/'
+cl.specCompiledDir		= 'build/test/'
+cl.testConfigFile			= 'test/config.coffee'
+cl.oneShotReporter		= 'nyan' #"progress"
+cl.watchReporter			= 'min' #"dot"
+cl.runTestDelay				= 500 # latence entre la détection d'un fichier modifié et l'execution des test (pour éviter les test en cascade lors des enregistrement de masse)
 
-#
-# Build source files
-#
-task 'build', 'compiles source files', ->
-  console.log 'building...'
+# formats géré
+cl.reglesDeConversion =
+	coffee:
+		func: cl.coffee2js
+		finalType: 'js'
+	jade:
+		func: cl.jade2html
+		finalType: 'html'
+	styl:
+		func: cl.stylus2css
+		finalType: 'css'
+	stylus:
+		func: cl.stylus2css
+		finalType: 'css'
 
-  files.forEach (file) ->
 
-    content = fs.readFileSync(file).toString()        # get contents of file
+option '-v', '--verbose', 'affichage détaillé'
+option '-V', '--veryverbose', 'affichage très détaillé (debug)'
 
-    switch path.extname file                          # do something based on file extension
-
-      when '.jade'
-        buff     = jade.compile content               # create buffer of jade content
-        html     = buff { title: 'async-flow' }       # jade => html
-        filename = file.replace /\.jade$/, '.html'   # get file name
-        saveto   = path.join OUTPUT, filename
-        compiled = fs.writeFileSync saveto, html    # save compiled .jade to .html
-
-      when '.coffee'
-        coffee = ['coffee', '-bco', OUTPUT, file]     # coffee --bare --compile --output OUTPUT <file>
-        exec coffee.join(' '),
-          (err, stdout, stderr) ->
-            throw err          if err
-            console.log stdout if stdout
-            console.log stderr if stderr
-
-      when '.styl'
-
-        filename = file.replace /\.styl/, '.css'      # get file name
-        saveto   = path.join OUTPUT, filename         # where we save the file to
-
-        stylus(content)
-          .set('filename', filename)                  # for debugging
-          .use(do nib)                                # include nib in compile
-          .render (err, css) ->                       # stylus => css
-            throw err if err
-            fs.writeFileSync saveto, css              # write compiled css to file
-
-      else
-        console.log "don't know what to do with", file
-
-#
-# Watch for changes in source files
-#
-task 'watch', 'watches for changes in source files', ->
-  console.log 'watching...'
-
-  watch = (file) ->
-    fs.watchFile file, (curr,prev) ->
-      if +curr.mtime isnt +prev.mtime                 # if the current time isn't the last modified
-        console.log 'change found in', file
-        invoke 'build'                                # trigger build
-
-  watch file for file in files                        # add watcher to each source file
+task 'watch', "A chaque changement sauvegardé, recompile les fichiers concernés et exécute les tests".cyan, (options)->
+	cl.watchTask options
+task "test", "exécute les tests".cyan, (options)->
+	cl.testTask options
+task 'build', 'compile tous les fichiers des dossiers '.cyan + cl.appSourceDir + ' dans '.cyan + cl.appCompiledDir + ' et '.cyan + cl.specDir + ' dans '.cyan + cl.specCompiledDir, (options)->
+	cl.buildTask options
+task "clean", "supprime les dossiers ".cyan + cl.specDir + ' et '.cyan + cl.appSourceDir, (options)->
+	cl.cleanTask options
