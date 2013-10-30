@@ -5,32 +5,25 @@ html(lang="fr")
 		div.navbar.navbar-inverse.navbar-fixed-top
 			.container
 				.navbar-header
-					a.navbar-brand(href="") Dys'doc Tuteur
+					a.navbar-brand(href="tuteur/index.html") Dys'doc Tuteur
 				.navbar-collapse.collapse
 					ul.nav.navbar-nav
-						li
-							a(href="#") Accueil
-						li
-							a(href="#") Accueil
-						li
-							a(href="#") Accueil
 						li.dropdown
-							a.dropdown-toggle(href="#") Accueil
+							a.dropdown-toggle(href="tuteur/mesDocuments.html") Documents
 							ul.dropdown-menu
 								li
-									a(href="#") Accueil
+									a(href="tuteur/mesDocuments.html") Mes documents
 								li
-									a(href="#") Accueil
+									a(href="tuteur/nouveauDocument.html") Ajouter un document
+						li.dropdown
+							a.dropdown-toggle(href="tuteur/mesProfils.html") Profils
+							ul.dropdown-menu
 								li
-									a(href="#") Accueil
-								li.divider
-								li.dropdown-header
+									a(href="tuteur/mesProfils.html") Gestion des profils
 								li
-									a(href="#") Accueil
-								li
-									a(href="#") Accueil
+									a(href="tuteur/nouveauProfil.html") Ajouter un Profil
 		.container
-			h1 Espace Tuteur
+			h1(style='margin-top:70px') Espace Tuteur
 			p.lead
 				| Pour toutes remarques, suggestions ou problèmes rencontrés, une page est à votre disposition :
 				a.btn.btn-primary.btn-block(href='https://github.com/cnedDI/06AdaptSup/issues') https://github.com/cnedDI/06AdaptSup/issues

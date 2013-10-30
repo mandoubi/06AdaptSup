@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin: 10%;
+}
+a {
+  display: inline-block;
+  width: 30%;
+  padding: 5% 0;
+  margin: 10%;
+  background: #cdf;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: #000 2px 2px 2px;
+  position: relative;
+}
+a:hover {
+  background: #def;
+  text-decoration: none;
+}
+a:active {
+  background: #bce;
+  text-decoration: none;
+}
+a p {
+  display: none;
+}
+a:hover p {
+  display: block;
+  position: absolute;
+  top: 100%;
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  text-shadow: none;
+  padding: 5%;
+  width: 100%;
+  background-color: #eef;
+  border-radius: 20px;
+}

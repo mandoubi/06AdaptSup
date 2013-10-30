@@ -8,9 +8,5 @@ head
 		title Accueil
 	base(href='file:///'+siteBase+'/build/www/')
 	meta(name="viewport",content="width=device-width, initial-scale=1.0")
-	//- != getBlock('meta').toHTML()
-	//- != getBlock('styles').add(['/styles/main.css']).toHTML()
-	link(href="../../bower_components/bootstrap/dist/css/bootstrap.min.css",rel="stylesheet",media="screen")
-	//- //if lt IE 9
-	//-	script(src="../../bower_components/bootstrap/assets/js/html5shiv.js")
-	//-	script(src="../../bower_components/bootstrap/assets/js/respond.min.js")
+	link(href="cdn/vendors/bootstrap.css",rel="stylesheet",media="screen")
+	//- link(href="cdn/vendors/bootstrap-theme.css",rel="stylesheet",media="screen")

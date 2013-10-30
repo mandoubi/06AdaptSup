@@ -12,6 +12,7 @@ rimraf					= require 'rimraf'
 jade						= require 'jade'
 stylus					= require 'stylus'
 nib							= require 'nib'
+livereload			= require 'livereload'
 require 'colors'
 
 # internal globals
@@ -21,7 +22,6 @@ debug = false
 
 
 #config
-exports.fichierATester 			= 'cakeLib' # .js ajouté automatiquement
 exports.appSourceDir				= ''
 exports.appCompiledDir			= ''
 exports.appTestablePattern	= '' # motif de sélection des fichiers contenant le code métier à recharger avant chaque execution de test.
@@ -32,6 +32,8 @@ exports.oneShotReporter			= 'nyan' #"progress"
 exports.watchReporter				= 'min' #"dot"
 exports.runTestDelay				= 500 # latence entre la détection d'un fichier modifié et l'execution des test (pour éviter les test en cascade lors des enregistrement de masse)
 exports.reglesDeConversion	= {}
+exports.aDeplacer						= []
+
 
 exports.watchTask = (options)->
 	setGlobalOptions options
@@ -39,6 +41,9 @@ exports.watchTask = (options)->
 		exports.testTask options
 		new Monitor(exports.appSourceDir,appFileChange,appFileChange,rmAppFile)
 		new Monitor(exports.specDir,specFileChange,specFileChange,rmSpecFile)
+		server = livereload.createServer({interval:exports.runTestDelay})
+		server.watch path.resolve '.','build/www/'
+
 
 exports.testTask = (options, reporter=exports.oneShotReporter)->
 	q = Q.defer()
@@ -65,6 +70,7 @@ exports.buildTask = (options)->
 	q = Q.defer()
 	setGlobalOptions options
 	Q.all([
+		listDo exports.aDeplacer, src2buildWrapper
 		treeDo exports.specDir+'**', compileIt, [exports.specDir, exports.specCompiledDir]
 		treeDo exports.appSourceDir+'**', compileIt, [exports.appSourceDir, exports.appCompiledDir]
 	]).done ->
@@ -140,16 +146,27 @@ treeDo = (scanPattern, action, actionParamTab=[]) ->
 	util.log 'execute '.yellow + actionName + ' sur chaque fichiers répondant au motif : '.yellow + scanPattern if debug
 	glob scanPattern, (err, fileList)->
 		q.reject err if err
-		promesse = []
-		for file in fileList
-			# clonning actionParamTab
-			params = [file]
-			for i in [0..actionParamTab.length-1]
-				params.push actionParamTab[i]
-			# queing actions
-			promesse.push action.apply null, params
-		Q.all(promesse).then ->
-			q.resolve actionName
+		if fileList.length
+			promesse = listDo fileList, action, actionParamTab
+			promesse.then ->
+				q.resolve actionName
+		else q.reject 'no file matching this pattern : '+ scanPattern
+	q.promise
+
+listDo = (theList, action, actionParamTab=[]) ->
+	q = Q.defer()
+	actionName = (action+'').split('{')[0]
+	util.log 'execute '.yellow + actionName + ' sur chaque élément de la liste fournie.'.yellow if debug
+	promesse = []
+	for index in [0..theList.length-1]
+		params = [theList[index]]
+		# clonning actionParamTab
+		for i in [0..actionParamTab.length-1]
+			params.push actionParamTab[i]
+		# queing actions
+		promesse.push action.apply null, params
+	Q.all(promesse).then ->
+		q.resolve actionName
 	q.promise
 
 reloadIt = (file) ->
@@ -161,16 +178,14 @@ reloadIt = (file) ->
 	q.resolve file
 	q.promise
 
-
 compileIt = (srcFile, originFolder=exports.appSourceDir, destinationFolder=exports.appCompiledDir) ->
+	compiledFile = compiledFilePath(srcFile, originFolder, destinationFolder)
+	src2build srcFile, compiledFile
+src2build = (srcFile,compiledFile)->
 	#path.extname file
 	fileType = fileExtension srcFile
-	# determination du nom de fichier en sortie
 	if exports.reglesDeConversion[fileType] # s'il y a changement d'extension
 		conversion = exports.reglesDeConversion[fileType]
-		compiledFile = pathConvertor(srcFile, originFolder, destinationFolder, fileType, conversion.finalType)
-	else
-		compiledFile = pathConvertor(srcFile, originFolder, destinationFolder)
 
 	# on n'intervient que si l'original est plus récent que le fichier en sortie
 	isNewer(srcFile,compiledFile).then (res)->
@@ -187,12 +202,11 @@ compileIt = (srcFile, originFolder=exports.appSourceDir, destinationFolder=expor
 				promesse.then (compiledContent) ->
 					string2file compiledFile, compiledContent
 
+src2buildWrapper = (fromToTab) ->
+	src2build  fromToTab[0],fromToTab[1]
+
 rmCompiled = (srcFile, originFolder=exports.appSourceDir, destinationFolder=exports.appCompiledDir) ->
-	fileType = fileExtension srcFile
-	if exports.reglesDeConversion[fileType] # s'il y a une conversion de format
-		compiledFile = pathConvertor(srcFile, originFolder, destinationFolder, fileType, exports.reglesDeConversion[fileType].finalType)
-	else
-		compiledFile = pathConvertor(srcFile, originFolder, destinationFolder)
+	compiledFile = compiledFilePath(srcFile, originFolder, destinationFolder)
 	rmRecursive(compiledFile)
 
 Monitor = (folder, changeCallBack, newCallBack, rmCallBack) ->
@@ -256,6 +270,15 @@ justreturnContent = (srcContent)->
 fileExtension = (file)->
 	tmp = file.split('.')
 	tmp[tmp.length-1]
+compiledFilePath = (srcFile, originFolder=exports.appSourceDir, destinationFolder=exports.appCompiledDir) ->
+	fileType = fileExtension srcFile
+	# determination du nom de fichier en sortie
+	if exports.reglesDeConversion[fileType] # s'il y a changement d'extension
+		conversion = exports.reglesDeConversion[fileType]
+		compiledFile = pathConvertor(srcFile, originFolder, destinationFolder, fileType, conversion.finalType)
+	else
+		compiledFile = pathConvertor(srcFile, originFolder, destinationFolder)
+	compiledFile
 pathConvertor = (oldPath, originFolder, destinationFolder, originFileType='', destinationFileType='')->
 	newPath = unixifyPath(oldPath).replace(originFolder, destinationFolder)
 	if originFileType
