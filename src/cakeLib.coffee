@@ -111,8 +111,9 @@ exports.jade2html = (srcContent, srcFileName)->
 exports.stylus2css = (srcContent, srcFileName)->
 	q = Q.defer()
 	stylus(srcContent)
-		.set('filename', srcFileName)                  # for debugging
+		.set('filename', srcFileName)               # for debugging
 		.use(do nib)                                # include nib in compile
+		.import('nib')
 		.render (err, css) ->                       # stylus => css
 			throw err if err
 			q.resolve css              # write compiled css to file

@@ -172,7 +172,7 @@
   exports.stylus2css = function(srcContent, srcFileName) {
     var q;
     q = Q.defer();
-    stylus(srcContent).set('filename', srcFileName).use(nib()).render(function(err, css) {
+    stylus(srcContent).set('filename', srcFileName).use(nib())["import"]('nib').render(function(err, css) {
       if (err) {
         throw err;
       }

@@ -1,0 +1,42 @@
+!!! 5
+html(lang="fr")
+	include ../../templateModules/head
+	body
+		include ../../templateModules/menuTuteur
+		.container
+			h1(style='margin-top:70px') Ajouter un Document
+			.jumbotron
+				h2 Informations liées au document (méta-donnée)
+				.col-sm-6
+					h3 Obligatoire
+					input(placeholder="Titre")
+					select
+						option -- Type --
+						option Manuel scolaire
+						option Autre Livre
+						option Magasine
+						option Page seule
+					input(placeholder="ISBN (n'appaitra pas pour les pages seules)")
+					select
+						option -- Année scolaire --
+						option 6ème
+						option 5ème
+						option 4ème
+						option 3ème
+						option autre Année
+						option non scolaire
+				.col-sm-6
+					h3 Recommandée
+					input(placeholder="Nombre de page de l'ouvrage")
+					input(placeholder="description")
+					input(placeholder="tag")
+				hr.col-sm-12
+
+
+			h2 résultats associés
+			iframe(src="https://www.google.fr/search?q=manuel+6ème+math+hachette")
+			h2 importer votre document scanné
+			p format supporté : jpg, png, pdf image
+			p Glissez sur la page un ou plusieurs fichier pour les charger sur la plateforme ou utilisez le champ si dessous
+			input(type="file")
+		include ../../templateModules/footer

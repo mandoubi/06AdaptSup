@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Accueil</title>
+    <base href="file:///c:\Users\GammaNu\Documents\GitHub\dys-doc/build/www/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cdn/vendors/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="cdn/vendors/bootstrap-theme.css" rel="stylesheet" media="screen">
+    <link href="cdn/tuteur.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header"><a href="tuteur/index.html" class="navbar-brand">Dys'doc Tuteur</a></div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"><a href="tuteur/mesDocuments.html" class="dropdown-toggle">Documents<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="tuteur/mesDocuments.html">Mes documents</a></li>
+                <li><a href="tuteur/nouveauDocument.html">Ajouter un document</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="tuteur/mesProfils.html" class="dropdown-toggle">Profils<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="tuteur/mesProfils.html">Gestion des profils</a></li>
+                <li><a href="tuteur/nouveauProfil.html">Ajouter un Profil</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 style="margin-top:70px">Mes documents</h1>
+      <div class="jumbotron">
+        <select id="docView">
+          <option>Tous mes documents</option>
+          <option>Docuements d'Antoine</option>
+          <option>Docuements d'Eloïse</option>
+          <option>Docuements de Jeson</option>
+          <option>Docuements de Nathan</option>
+        </select><br><a href="tuteur/nouveauDocument.html">Ajouter un document</a>
+      </div>
+      <ul>
+        <li>Favoris
+          <ul>
+            <li class="book">Manuel de Math 3ème collection Hachette</li>
+            <li>exo de math pour vendredi 13</li>
+            <li>Carte de France des départements</li>
+          </ul>
+        </li>
+        <li>6ème
+          <ul>
+            <li>français
+              <ul>
+                <li class="book">Manuel de Français 6ème collection Nathan</li>
+                <li class="book">Les fables de la fontaine</li>
+                <li>exercices sur les ai, et, est, es</li>
+                <li>exercices sur les fin de mot en ai, ais, ait, é ou er</li>
+              </ul>
+            </li>
+            <li>math
+              <ul>
+                <li class="book">Manuel de Math 6ème collection Nathan</li>
+                <li>controle maison pour Lundi</li>
+                <li>fiche récapitulative sur les nombres à virgule</li>
+              </ul>
+            </li>
+            <li>histoire géographie
+              <ul>
+                <li class="book">Manuel d'Histoire 6ème collection Hachette</li>
+                <li class="book">Manuel de Géographie 6ème collection Nathan</li>
+                <li>Carte de France des départements</li>
+                <li>Carte de France des régions</li>
+                <li>Carte de France des montagnes</li>
+                <li>Carte de France des fleuves</li>
+                <li>Extrait de journal du 11 septembre 2001</li>
+                <li>Les réformes de mai 68</li>
+                <li>frise chronologique des dinausores</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>5ème
+          <ul>
+            <li>français
+              <ul>
+                <li class="book">Manuel de Français 5ème collection Nathan</li>
+                <li class="book">Les fables de la fontaine</li>
+                <li>exercices sur les ai, et, est, es</li>
+                <li>exercices sur les fin de mot en ai, ais, ait, é ou er</li>
+              </ul>
+            </li>
+            <li>math
+              <ul>
+                <li class="book">Manuel de Math 5ème collection Nathan</li>
+                <li>controle maison pour Lundi</li>
+                <li>fiche récapitulative sur les nombres à virgule</li>
+              </ul>
+            </li>
+            <li>histoire géographie
+              <ul>
+                <li class="book">Manuel d'Histoire 5ème collection Hachette</li>
+                <li class="book">Manuel de Géographie 5ème collection Nathan</li>
+                <li>Carte de France des départements</li>
+                <li>Carte de France des régions</li>
+                <li>Carte de France des montagnes</li>
+                <li>Carte de France des fleuves</li>
+                <li>Extrait de journal du 11 septembre 2001</li>
+                <li>Les réformes de mai 68</li>
+                <li>frise chronologique des dinausores</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script src="cdn/vendors/jquery.js"></script>
+    <script src="cdn/vendors/bootstrap.js"></script>
+  </body>
+</html>

@@ -32,8 +32,44 @@
       </div>
     </div>
     <div class="container">
-      <h1 style="margin-top:70px">Espace Tuteur</h1>
-      <p class="lead">Pour toutes remarques, suggestions ou problèmes rencontrés, une page est à votre disposition :<a href="https://github.com/cnedDI/06AdaptSup/issues" class="btn btn-primary btn-block">https://github.com/cnedDI/06AdaptSup/issues</a></p>
+      <h1 style="margin-top:70px">Ajouter un Document</h1>
+      <div class="jumbotron">
+        <h2>Informations liées au document (méta-donnée)</h2>
+        <div class="col-sm-6">
+          <h3>Obligatoire</h3>
+          <input placeholder="Titre">
+          <select>
+            <option>-- Type --</option>
+            <option>Manuel scolaire</option>
+            <option>Autre Livre</option>
+            <option>Magasine</option>
+            <option>Page seule</option>
+          </select>
+          <input placeholder="ISBN (n'appaitra pas pour les pages seules)">
+          <select>
+            <option>-- Année scolaire --</option>
+            <option>6ème</option>
+            <option>5ème</option>
+            <option>4ème</option>
+            <option>3ème</option>
+            <option>autre Année</option>
+            <option>non scolaire</option>
+          </select>
+        </div>
+        <div class="col-sm-6">
+          <h3>Recommandée</h3>
+          <input placeholder="Nombre de page de l'ouvrage">
+          <input placeholder="description">
+          <input placeholder="tag">
+        </div>
+        <hr class="col-sm-12">
+      </div>
+      <h2>résultats associés</h2>
+      <iframe src="https://www.google.fr/search?q=manuel+6ème+math+hachette"></iframe>
+      <h2>importer votre document scanné</h2>
+      <p>format supporté : jpg, png, pdf image</p>
+      <p>Glissez sur la page un ou plusieurs fichier pour les charger sur la plateforme ou utilisez le champ si dessous</p>
+      <input type="file">
     </div>
     <script src="cdn/vendors/jquery.js"></script>
     <script src="cdn/vendors/bootstrap.js"></script>

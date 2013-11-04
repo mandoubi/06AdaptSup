@@ -1,0 +1,72 @@
+!!! 5
+html(lang="fr")
+	include ../../templateModules/head
+	body
+		include ../../templateModules/menuTuteur
+		.container
+			h1(style='margin-top:70px') Mes documents
+			.jumbotron
+				//- label(for="docView") Visualiser les documents partagés à un élève
+				select#docView
+					option Tous mes documents
+					option Docuements d'Antoine
+					option Docuements d'Eloïse
+					option Docuements de Jeson
+					option Docuements de Nathan
+				br
+				a(href="tuteur/nouveauDocument.html") Ajouter un document
+			ul
+				li Favoris
+					ul
+						li.book Manuel de Math 3ème collection Hachette
+						li exo de math pour vendredi 13
+						li Carte de France des départements
+				li 6ème
+					ul
+						li français
+							ul
+								li.book Manuel de Français 6ème collection Nathan
+								li.book Les fables de la fontaine
+								li exercices sur les ai, et, est, es
+								li exercices sur les fin de mot en ai, ais, ait, é ou er
+						li math
+							ul
+								li.book Manuel de Math 6ème collection Nathan
+								li controle maison pour Lundi
+								li fiche récapitulative sur les nombres à virgule
+						li histoire géographie
+							ul
+								li.book Manuel d'Histoire 6ème collection Hachette
+								li.book Manuel de Géographie 6ème collection Nathan
+								li Carte de France des départements
+								li Carte de France des régions
+								li Carte de France des montagnes
+								li Carte de France des fleuves
+								li Extrait de journal du 11 septembre 2001
+								li Les réformes de mai 68
+								li frise chronologique des dinausores
+				li 5ème
+					ul
+						li français
+							ul
+								li.book Manuel de Français 5ème collection Nathan
+								li.book Les fables de la fontaine
+								li exercices sur les ai, et, est, es
+								li exercices sur les fin de mot en ai, ais, ait, é ou er
+						li math
+							ul
+								li.book Manuel de Math 5ème collection Nathan
+								li controle maison pour Lundi
+								li fiche récapitulative sur les nombres à virgule
+						li histoire géographie
+							ul
+								li.book Manuel d'Histoire 5ème collection Hachette
+								li.book Manuel de Géographie 5ème collection Nathan
+								li Carte de France des départements
+								li Carte de France des régions
+								li Carte de France des montagnes
+								li Carte de France des fleuves
+								li Extrait de journal du 11 septembre 2001
+								li Les réformes de mai 68
+								li frise chronologique des dinausores
+		include ../../templateModules/footer
