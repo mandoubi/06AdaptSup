@@ -1,6 +1,15 @@
 !!! 5
 html(lang="fr")
-	include ../templateModules/head
+	//- head.jade dupliqué ici pour gérer la base différente. à gérer sous forme de paramètre par la suite.
+	head
+		meta(charset='utf-8')
+		title Accueil
+		base(href='./')
+		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		link(href="cdn/vendors/bootstrap.css",rel="stylesheet",media="screen")
+		link(href="cdn/vendors/bootstrap-theme.css",rel="stylesheet",media="screen")
+		link(href="cdn/tuteur.css",rel="stylesheet",media="screen")
+	//- include ../templateModules/head
 	body.container
 		link(href="cdn/accueil.css",rel="stylesheet")
 		h1 Bienvenue sur Dys'doc

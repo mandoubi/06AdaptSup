@@ -11,6 +11,7 @@ a {
   padding: 5% 0;
   margin: 10%;
   background: #cdf;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
   text-align: center;
   text-decoration: none;
@@ -41,5 +42,6 @@ a:hover p {
   padding: 5%;
   width: 100%;
   background-color: #eef;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
 }
