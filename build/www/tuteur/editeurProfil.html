@@ -32,16 +32,35 @@
       </div>
     </div>
     <div class="container">
-      <h1 style="margin-top:70px">Mes profils</h1>
-      <div class="jumbotron"><a href="tuteur/nouveauProfil.html">Ajouter un Profil</a></div>
-      <ul>
-        <li><a href="tuteur/editeurProfil.html">Profil d'Antoine</a></li>
-        <li><a href="tuteur/editeurProfil.html">Profil d'Eloïse</a></li>
-        <li><a href="tuteur/editeurProfil.html">Profil de Jeson</a></li>
-        <li><a href="tuteur/editeurProfil.html">Profil de Nathan</a></li>
-      </ul>
+      <h1 style="margin-top:70px">Editeur de Profil</h1>
+      <div class="jumbotron">Pofil actif<br>
+        <select>
+          <option>Antoine</option>
+          <option>Eloïse</option>
+          <option>Jeson</option>
+          <option>Nathan</option>
+        </select>
+        <div class="col-sm-6"><a class="btn-primary btn-block">Sauvegarder les changements</a></div>
+        <div class="col-sm-6"><a class="btn-primary btn-block">Annuler les changements</a></div>
+      </div>
+      <div class="col-sm-4">
+        <input type="checkbox">
+        <label>Ligne a gauche et à droite du texte</label>
+        <input placeholder="couleur de la ligne de gauche">
+        <input placeholder="couleur de la ligne de droite"><br>
+        <input type="checkbox">
+        <label>interligne modifié</label>
+        <input placeholder="taille de l'interligne"><br>
+        <input type="checkbox">
+        <label>faire varier les couleurs de chaque ligne</label>
+        <input placeholder="cycler sur n ligne">
+        <input placeholder="couleur ligne 1">
+        <input placeholder="couleur ligne 2">
+        <input placeholder="couleur ligne 3"><br>
+      </div>
+      <div class="col-sm-8"><img src="data/rawScan/1.jpg"></div>
     </div>
-    <script src="cdn/vendors/jquery.js"></script>
-    <script src="cdn/vendors/bootstrap.js"></script>
   </body>
+  <script src="cdn/vendors/jquery.js"></script>
+  <script src="cdn/vendors/bootstrap.js"></script>
 </html>

@@ -5,4 +5,19 @@ html(lang="fr")
 		include ../../templateModules/menuTuteur
 		.container
 			h1(style='margin-top:70px') Ajouter un profil
+			.jumbotron
+				input(placeholder="Nom du nouveau profil")
+				.col-sm-6
+					p Créer le profil à partir d'un profil existant
+					select
+						option Antoine
+						option Eloïse
+						option Jeson
+						option Nathan
+				.col-sm-11
+				.col-sm-6
+					a.btn-primary.btn-block(href="tuteur/editeurProfil.html") valider
+				.col-sm-6
+					a.btn-primary.btn-block(href="tuteur/editeurProfil.html") Créer un profil vièrge
+				.col-sm-12
 		include ../../templateModules/footer

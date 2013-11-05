@@ -22,3 +22,12 @@ input,
 select {
   width: 100%;
 }
+input[type="checkbox"] {
+  width: 20px;
+}
+img {
+  max-width: 100%;
+}
+.col-sm-12 {
+  clear: both;
+}
