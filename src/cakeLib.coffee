@@ -1,4 +1,5 @@
 fs							= require 'fs'
+fse							= require 'fs-extra'
 path						= require 'path'
 {exec,spawn}		= require 'child_process'
 util						= require 'util'
@@ -197,11 +198,10 @@ src2build = (srcFile,compiledFile)->
 			file2string(srcFile).then (res)->
 				srcContent = res
 				if conversion # s'il y a un traitement spécifique pour ce format
-					promesse = conversion.func srcContent, srcFile # on compile
+					return conversion.func(srcContent, srcFile).then (compiledContent) -> # on compile
+						string2file compiledFile, compiledContent
 				else
-					promesse = justreturnContent srcContent
-				promesse.then (compiledContent) ->
-					string2file compiledFile, compiledContent
+					return file2file srcFile, compiledFile
 
 src2buildWrapper = (fromToTab) ->
 	src2build  fromToTab[0],fromToTab[1]
@@ -314,6 +314,12 @@ file2path = (file) ->
 	filePath = file.split('/')
 	filePath.pop()
 	filePath.join('/')
+file2file = (source,target) ->
+	q = Q.defer()
+	fse.copy source, target, (err) ->
+		q.reject err if err
+		q.resolve()
+	q.promise
 rmRecursive = (folder)->
 	q = Q.defer()
 	rimraf folder, (err)->
@@ -334,3 +340,4 @@ runTestIfChange = ->
 	if untestedChange
 		untestedChange = false
 		exports.testTask null, exports.watchReporter
+

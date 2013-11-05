@@ -43,6 +43,7 @@
     "jade": "~0.35.0",
     "chai-as-promised": "~4.1.0",
     "bower": "~1.2.7",
-    "livereload": "~0.3.2"
+    "livereload": "~0.3.2",
+    "fs-extra": "~0.8.1"
   }
 }

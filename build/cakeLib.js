@@ -1,7 +1,9 @@
 (function() {
-  var Mocha, Monitor, Q, appFileChange, coffee, compileIt, compiledFilePath, debug, delay, exec, file2path, file2string, fileExtension, fs, fs_readFile, fs_stat, fs_writeFile, glob, isNewer, jade, justreturnContent, listDo, livereload, mkdirRecursive, mkdirp, nib, path, pathConvertor, reloadIt, rimraf, rmAppFile, rmCompiled, rmRecursive, rmSpecFile, runTestIfChange, setGlobalOptions, spawn, specFileChange, src2build, src2buildWrapper, string2file, stylus, treeDo, unixifyPath, untestedChange, util, verbose, watch, _ref;
+  var Mocha, Monitor, Q, appFileChange, coffee, compileIt, compiledFilePath, debug, delay, exec, file2file, file2path, file2string, fileExtension, fs, fs_readFile, fs_stat, fs_writeFile, fse, glob, isNewer, jade, justreturnContent, listDo, livereload, mkdirRecursive, mkdirp, nib, path, pathConvertor, reloadIt, rimraf, rmAppFile, rmCompiled, rmRecursive, rmSpecFile, runTestIfChange, setGlobalOptions, spawn, specFileChange, src2build, src2buildWrapper, string2file, stylus, treeDo, unixifyPath, untestedChange, util, verbose, watch, _ref;
 
   fs = require('fs');
+
+  fse = require('fs-extra');
 
   path = require('path');
 
@@ -301,16 +303,15 @@
           util.log('Compile '.yellow + srcFile + ' to '.yellow + compiledFile);
         }
         return file2string(srcFile).then(function(res) {
-          var promesse, srcContent;
+          var srcContent;
           srcContent = res;
           if (conversion) {
-            promesse = conversion.func(srcContent, srcFile);
+            return conversion.func(srcContent, srcFile).then(function(compiledContent) {
+              return string2file(compiledFile, compiledContent);
+            });
           } else {
-            promesse = justreturnContent(srcContent);
+            return file2file(srcFile, compiledFile);
           }
-          return promesse.then(function(compiledContent) {
-            return string2file(compiledFile, compiledContent);
-          });
         });
       }
     });
@@ -524,6 +525,18 @@
     filePath = file.split('/');
     filePath.pop();
     return filePath.join('/');
+  };
+
+  file2file = function(source, target) {
+    var q;
+    q = Q.defer();
+    fse.copy(source, target, function(err) {
+      if (err) {
+        q.reject(err);
+      }
+      return q.resolve();
+    });
+    return q.promise;
   };
 
   rmRecursive = function(folder) {

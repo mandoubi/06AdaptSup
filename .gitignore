@@ -1,4 +1,6 @@
 bliotux
 node_modules
 bower_components
+Thumbs.db
+._*
 #build
