@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="layout.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2826"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2840"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2854"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2868"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2882"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2896"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2910"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2924"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2938"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2952"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2966"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2980"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2994"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3008"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3030"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3030-4"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3030-9"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3495"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7625"
+     inkscape:cx="605.90164"
+     inkscape:cy="216.78179"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="721"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2816"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-452.36218)"
+     onmousemove="now_drag(evt)">
+    <image
+       sodipodi:absref="/home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/representerUnNombre/templates/representerUnNombre/souris.jpg"
+       xlink:href="templates/representerUnNombre/souris.jpg"
+       y="486.49332"
+       x="82.442619"
+       id="imageSouris"
+       height="46"
+       width="45" />
+    <image
+       y="630.36218"
+       x="190"
+       id="imageZone1Haut"
+       height="62"
+       width="76"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/T%C3%AAte%20de%20fille.jpg"
+       style="stroke:none;stroke-opacity:1" />
+    <image
+       y="705.36218"
+       x="190"
+       id="imageZone1Bas"
+       height="40"
+       width="58"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/Rectangle%20avec%203%20jetons.jpg"
+       class="dropZone" />
+    <image
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/T%C3%AAte%20de%20fille.jpg"
+       width="76"
+       height="62"
+       id="imageZone2Haut"
+       x="307.33334"
+       y="630.36218" />
+    <image
+       y="705.36218"
+       x="307.33334"
+       id="imageZone2Bas"
+       height="90.5"
+       width="78"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/Vase%20avec%203%20fleurs.jpg"
+       class="dropZone" />
+    <image
+       y="630.36218"
+       x="424.66669"
+       id="imageZone3Haut"
+       height="62"
+       width="76"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/T%C3%AAte%20de%20fille.jpg" />
+    <image
+       y="705.36218"
+       x="424.66669"
+       id="imageZone3Bas"
+       height="81"
+       width="107"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/Nuage%20vide.jpg"
+       class="dropZone" />
+    <image
+       y="630.36218"
+       x="542"
+       id="imageZone4Haut"
+       height="69"
+       width="62"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/T%C3%AAte%20de%20gar%C3%A7on.jpg" />
+    <image
+       y="705.36218"
+       x="542"
+       id="imageZone4Bas"
+       height="69"
+       width="66"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/D%C3%A9%20vide.jpg"
+       class="dropZone" />
+    <image
+       y="882.36218"
+       x="200.35547"
+       id="image2926"
+       height="35"
+       width="34"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1.jpg"
+       class="image1-1 objet" />
+    <image
+       y="882.36218"
+       x="264.0166"
+       id="image2940"
+       height="35"
+       width="29"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/2.jpg"
+       class="image1-2 objet" />
+    <image
+       y="882.36218"
+       x="327.67773"
+       id="image2954"
+       height="32"
+       width="28"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/3.jpg"
+       class="image1-3 objet" />
+    <image
+       y="882.36218"
+       x="391.33887"
+       id="image2968"
+       height="39"
+       width="25"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/4.jpg"
+       class="image1-4 objet" />
+    <image
+       y="882.36218"
+       x="455"
+       id="image2982"
+       height="40"
+       width="27"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/5.jpg"
+       class="image1-5 objet" />
+    <image
+       y="1002.3622"
+       x="200.35547"
+       id="image2996"
+       height="24"
+       width="23"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       class="image3-1 objet" />
+    <image
+       y="1002.3622"
+       x="454"
+       id="image2996-1"
+       height="24"
+       width="23"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       class="image3-5 objet" />
+    <image
+       y="1002.3622"
+       x="263.7666"
+       id="image2996-1-7"
+       height="24"
+       width="23"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       class="image3-2 objet" />
+    <image
+       y="1002.3622"
+       x="327.17773"
+       id="image2996-1-0"
+       height="24"
+       width="23"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       class="image3-3 objet" />
+    <image
+       y="1002.3622"
+       x="390.58887"
+       id="image2996-1-4"
+       height="24"
+       width="23"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       class="image3-4 objet" />
+    <image
+       class="image2-1 objet"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       width="23"
+       height="24"
+       id="image3190"
+       x="200.35547"
+       y="946.36218" />
+    <image
+       class="image2-5 objet"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       width="23"
+       height="24"
+       id="image3192"
+       x="454"
+       y="946.36218" />
+    <image
+       class="image2-2 objet"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       width="23"
+       height="24"
+       id="image3194"
+       x="263.7666"
+       y="946.36218" />
+    <image
+       class="image2-3 objet"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       width="23"
+       height="24"
+       id="image3196"
+       x="327.17773"
+       y="946.36218" />
+    <image
+       class="image2-4 objet"
+       xlink:href="file:///C:/Clients/WECENA/Tchou/Capture/1%20jeton.jpg"
+       width="23"
+       height="24"
+       id="image3198"
+       x="390.58887"
+       y="946.36218" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+       x="196"
+       y="854.36218"
+       id="text3200"
+       class="chiffre objet"><tspan
+         sodipodi:role="line"
+         id="tspan3202"
+         x="196"
+         y="854.36218">1</tspan></text>
+    <text
+       id="text3204"
+       y="854.36218"
+       x="260"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"
+       class="chiffre objet"><tspan
+         sodipodi:role="line"
+         id="tspan3220"
+         x="260"
+         y="854.36218">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="324"
+       y="854.36218"
+       id="text3208"
+       sodipodi:linespacing="125%"
+       class="chiffre objet"><tspan
+         sodipodi:role="line"
+         id="tspan3222"
+         x="324"
+         y="854.36218">3</tspan></text>
+    <text
+       id="text3212"
+       y="854.36218"
+       x="388"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"
+       sodipodi:linespacing="125%"
+       class="chiffre objet"><tspan
+         sodipodi:role="line"
+         id="tspan3224"
+         x="388"
+         y="854.36218">4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="452"
+       y="854.36218"
+       id="text3216"
+       sodipodi:linespacing="125%"
+       class="chiffre objet"><tspan
+         sodipodi:role="line"
+         id="tspan3226"
+         x="452"
+         y="854.36218">5</tspan></text>
+    <rect
+       style="fill:none;stroke:none"
+       id="zone1"
+       width="110.16393"
+       height="106.22951"
+       x="187.60655"
+       y="698.26379"
+       class="zone" />
+    <rect
+       y="698.26379"
+       x="420.15302"
+       height="106.22951"
+       width="110.16393"
+       id="zone3"
+       style="fill:none;stroke:none"
+       class="zone" />
+    <rect
+       style="fill:none;stroke:none"
+       id="zone2"
+       width="110.16393"
+       height="106.22951"
+       x="303.87979"
+       y="698.26379"
+       class="zone" />
+    <rect
+       style="fill:none;stroke:none"
+       id="zone4"
+       width="110.16393"
+       height="106.22951"
+       x="536.42627"
+       y="698.26379"
+       class="zone" />
+    <g
+       id="g4424"
+       onclick="clickOops(evt)">
+      <text
+         id="text4418"
+         y="1022.1982"
+         x="569.1803"
+         style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="1022.1982"
+           x="569.1803"
+           id="tspan4420"
+           sodipodi:role="line">Oups</tspan></text>
+      <rect
+         y="980.8739"
+         x="561.33136"
+         height="56.353622"
+         width="120.61591"
+         id="rect4422"
+         style="fill:none;stroke:#000000;stroke-width:1.03982294;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

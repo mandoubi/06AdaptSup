@@ -1,0 +1,4 @@
+. ef de 3 égal 2 fois 3. On remplace x par 3.
+  ef de 3 égal 6. On calcule.
+  L'image de 3 par la fonction f est 6.
+  

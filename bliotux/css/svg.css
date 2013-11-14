@@ -1,0 +1,179 @@
+/*
+# -*- coding: utf-8 -*-
+#
+# File: svg.css
+#
+# Copyright (c) 2009 by Jean Millerat, 8 square de Batz, 78310 MAUREPAS
+# (Jean.Bliotux@wecena.com)
+#
+# GNU Affero General Public License (AGPL)
+#
+# This file is part of a program which is free software: you can
+# redistribute it and/or modify it under the terms of the
+# GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+*/
+
+body {
+    margin: 0;
+	padding: 0;
+	outline: 0 none;
+	border: 0 none;
+	position: relative;
+}
+
+#tabs ul {
+    width: 100%;
+}
+
+#tips ul {
+    width: auto;
+}
+
+table {
+    width: 100%;
+}
+
+pre {
+    clear: none;
+}
+
+.svgdiv {
+    border: 0px solid #FF0000;
+	width: 100%;
+    height: 768px;
+}
+
+.svgsample {
+    float: left;
+    width: 46%;
+    margin: 1%;
+    overflow: scroll;
+    border: 1px solid #3c8243;
+    padding: 5px;
+}
+
+.drawOpt {
+    float: left;
+    width: 25%;
+}
+
+.row {
+    clear: both;
+}
+
+#showMods {
+    padding: 0em 0.25em;
+    background-color: #ddffe8;
+    color: #000;
+    border: 1px solid #3c8243;
+    font-size: 80%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#domMods {
+    display: none;
+    padding: 0em 1em 0.5em;
+    background-color: #ddffe8;
+    border: 1px solid #3c8243;
+}
+
+.textBox {
+	background-color: white;
+	display: table-cell;
+	vertical-align: middle;
+	hyphens: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.textParagraph {
+	display: block;
+}
+
+.boxHider {
+	color: white;
+	fill: white;
+	border: 0px;
+	fill-opacity: 0.7;
+}
+
+.boxHider:hover {
+    fill: red;
+	fill-opacity: 0.0;
+}
+
+@font-face {
+	font-family: "OpenDyslexic";
+	src: url('../media/OpenDyslexic/OpenDyslexic-Regular.otf');
+}
+@font-face {
+	font-family: "OpenDyslexic";
+	font-style: italic;
+	src: url('../media/OpenDyslexic/OpenDyslexic-Italic.otf');
+}
+@font-face {
+	font-family: "OpenDyslexic";
+	font-weight: bold;
+	src: url('../media/OpenDyslexic/OpenDyslexic-Bold.otf');
+}
+@font-face {
+	font-family: "OpenDyslexic";
+	font-style: italic;
+	font-weight: bold;
+	src: url('../media/OpenDyslexic/OpenDyslexic-BoldItalic.otf');
+}
+
+@font-face {
+	font-family: "Eulexia";
+	src: url('../media/Eulexia/eulexia.ttf');
+}
+@font-face {
+	font-family: "Eulexia";
+	font-style: italic;
+	src: url('../media/Eulexia/eulexia-italic.ttf');
+}
+@font-face {
+	font-family: "Eulexia";
+	font-weight: bold;
+	src: url('../media/Eulexia/eulexia-bold.ttf');
+}
+@font-face {
+	font-family: "Eulexia";
+	font-style: italic;
+	font-weight: bold;
+	src: url('../media/Eulexia/eulexia-bolditalic.ttf');
+}
+
+.guide {
+	stroke: red;
+	stroke-dasharray: 20,10;
+	stroke-width: 8;
+	opacity: 1;
+}
+
+.guide:hover {
+	opacity: 0.4;
+}
+
+.invisibleGuide {
+	stroke: white;
+	stroke-dasharray: none;
+	stroke-width: 10; 	
+	opacity: 1;
+}
+
+.invisibleGuide:hover {
+	opacity: 0.4;
+}

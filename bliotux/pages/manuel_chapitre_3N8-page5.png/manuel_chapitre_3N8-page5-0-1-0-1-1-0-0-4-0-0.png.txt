@@ -1,0 +1,3 @@
+. ef de x = 2 fois x donc la fonction ef est linéaire avec a égal 2.
+. La fonction gé n'est ni affine ni linéaire car on doit élever x au carré.
+. h de x égal 5 fois x plus (moins 2) donc la fonction h est affine avec a égal 5 et b égal moins 2.

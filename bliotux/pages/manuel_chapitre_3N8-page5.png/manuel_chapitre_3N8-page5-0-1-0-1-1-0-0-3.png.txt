@@ -1,0 +1,4 @@
+Exemple : Soient les fonctions f, g et h telles que f de x égal 2 x ; g de x égal x au carré moins 4 et h de x égal 5 x moins 2.
+Indique, en justifiant si les fonctions précédentes sont affines, linéaires ou ni l'un ni
+l'autre ; calcule ensuite l'image de 3 par la fonction f et celle de moins 7 par la fonction h.
+

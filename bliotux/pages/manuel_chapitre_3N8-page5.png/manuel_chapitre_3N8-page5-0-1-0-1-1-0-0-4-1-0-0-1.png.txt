@@ -1,0 +1,3 @@
+. h de moins 7 égal 5 fois (moins 7) moins 2
+  h de moins 7 égal moins 37
+  L'image de moins 7 par la fonction h est moins 37.

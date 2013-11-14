@@ -1,0 +1,133 @@
+<!DOCTYPE 
+html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Test pour Bliotux</title>
+        <meta http-equiv="content-type"
+            content="application/xhtml+xml" />
+        <style type="text/css">
+            @import "jquery.svg/jquery.svg.css";
+            #svgdiv { width: 800px; height: 500px; border: 1px solid }
+            </style>
+        <script type="text/javascript" src="jquery-1.4.2.min.js">
+        </script>
+        <script type="text/javascript" src="jquery.svg/jquery.svg.js">
+        </script>
+        <script type="text/javascript">
+            var svgdiv;
+            
+            $(document).ready(initSVGdiv);
+            
+            function initSVGdiv() {
+                $('#svgdiv').svg({onLoad: SVGdiv});
+            }
+            
+            function SVGdiv(svg) {
+                svgdiv = svg;
+                svgdiv.group("base");
+                svgdiv.group("overlay");
+                insertSVG('jquery.svg/lion.svg', 'lion', 'base');
+                //insertSVG('templates/simpleOperation/layout.svg', 'layer1', 'overlay');
+                insertSVG('templates/plainText/layout.svg', 'layer1', 'base');
+                insertSVG('jquery.svg/lion2.svg', 'lion2', 'overlay');
+                insertSVG('templates/magnifier/layout.svg', 'magnifier', 'overlay', manipulate);
+            }
+            
+            /*
+                Inserts an SVG under a group node
+                svgpath:    path to the SVG file (or embedded svg)  [mandatory]
+                svgid:      id of the svg in the file               [mandatory]
+                svggroupid: id of the group in which to insert      [mandatory]
+                callback:   callback function                       [optional]
+            */
+            function insertSVG(svgpath, svgid, svggroupid, callback) {
+                svgdiv.load(svgpath,
+                    {
+                        addTo: true,
+                        onLoad: function() {
+                            $('#'+svggroupid).prepend($('#'+svgid));
+                            if(callback) {
+                                callback();
+                            }
+                        },
+                        changeSize: false
+                    }
+                );
+            }
+            
+            function manipulate(root) {
+                $('#zoomed').attr("xlink:href", "#base");
+            }
+            
+            var x;
+            var y;
+
+            const zoomMax = 4;
+            const zoomMin = 1;
+            const zoomStep = 1;
+
+            var zoom = zoomMin;
+
+            function zoomIn(event) {
+                zoom += zoomStep;
+                if(zoom >= zoomMax) {
+                    hideZoomIn();
+                }
+                showZoomOut();
+                resizeImage();
+            }
+
+            function zoomOut(event) {
+                zoom -= zoomStep;
+                if(zoom == zoomMin) {
+                    hideZoomOut();
+                }
+                showZoomIn();
+                resizeImage();
+            }
+
+            function mouseMove(event) {
+                x = event.clientX;
+                y = event.clientY;
+
+                $('#myCircle').attr("cx", x);
+                $('#myCircle').attr("cy",y);
+                $('#Frame').attr("cx", x);
+                $('#Frame').attr("cy", y);
+                $('#FrameShade').attr("cx", x);
+                $('#FrameShade').attr("cy", y);
+
+                resizeImage();
+            }
+
+            function resizeImage() {
+                var newx = x - zoom*x;
+                var newy = y - zoom*y;
+
+                var tx = "translate(" + newx + "," + newy
+                    + "),scale(" + zoom + "," + zoom +")";
+                $('#clippedI').attr("transform", tx);
+            }
+
+            function hideZoomIn() {
+                $('#ZoomIn').attr("display", "none");
+            }
+
+            function hideZoomOut() {
+                $('#ZoomOut').attr("display", "none");
+            }
+
+            function showZoomIn() {
+                $('#ZoomIn').attr("display", "");
+            }
+
+            function showZoomOut() {
+                $('#ZoomOut').attr("display", "");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="svgdiv"></div>
+    </body>
+</html>

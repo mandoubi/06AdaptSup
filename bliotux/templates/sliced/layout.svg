@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3228"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="layout.svg"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs3230">
+    <linearGradient
+       id="linearGradient3956">
+      <stop
+         style="stop-color:#ffd6d6;stop-opacity:1;"
+         offset="0"
+         id="stop3958" />
+      <stop
+         style="stop-color:#8bffff;stop-opacity:1;"
+         offset="1"
+         id="stop3960" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3872">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop3874" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3876" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3829">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3832" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3834" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3839">
+      <stop
+         id="stop3841"
+         offset="0"
+         style="stop-color:#ff0000;stop-opacity:1;" />
+      <stop
+         id="stop3843"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3827">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3829" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3831" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="800 : 300 : 1"
+       inkscape:persp3d-origin="400 : 200 : 1"
+       id="perspective3236" />
+    <inkscape:perspective
+       id="perspective3324"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3839"
+       id="linearGradient3837"
+       x1="-320.8421"
+       y1="144"
+       x2="-184.42105"
+       y2="144"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3839"
+       id="linearGradient3854"
+       gradientUnits="userSpaceOnUse"
+       x1="-319.57895"
+       y1="85.894737"
+       x2="-258.94736"
+       y2="147.78947"
+       gradientTransform="translate(320.8421,-84.631584)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3872"
+       id="linearGradient3878"
+       x1="603.78949"
+       y1="289.25693"
+       x2="723.78949"
+       y2="289.25693"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3956"
+       id="radialGradient3962"
+       cx="660.63159"
+       cy="419.52008"
+       fx="660.63159"
+       fy="419.52008"
+       r="33.052631"
+       gradientTransform="matrix(1,0,0,1.2292994,0,-96.195708)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3956"
+       id="radialGradient3970"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.2292994,0,-96.195708)"
+       cx="660.63159"
+       cy="419.52008"
+       fx="660.63159"
+       fy="419.52008"
+       r="33.052631" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3872"
+       id="linearGradient3972"
+       gradientUnits="userSpaceOnUse"
+       x1="603.78949"
+       y1="289.25693"
+       x2="723.78949"
+       y2="289.25693" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3872"
+       id="linearGradient3892"
+       gradientUnits="userSpaceOnUse"
+       x1="603.78949"
+       y1="289.25693"
+       x2="723.78949"
+       y2="289.25693"
+       gradientTransform="matrix(1.1089762,0,0,1.8131045,-64.126764,2.2775665)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.79166667"
+     inkscape:cx="509.84954"
+     inkscape:cy="731.30157"
+     inkscape:current-layer="toolbarItself"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="738"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3852" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3233">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       id="imageGroup">
+      <image
+         y="0"
+         x="0"
+         id="image"
+         xlink:href="file:///home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/image/image.jpg" />
+    </g>
+  </g>
+  <g
+     id="toolbar">
+    <animateTransform
+       attributeType="xml"
+       attributeName="transform"
+       type="translate"
+       from="0"
+       to="-150"
+       begin="mouseenter"
+       end="mouseleave"
+       dur="0.5s"
+       fill="freeze"
+       id="showToolbar" />
+    <animateTransform
+       attributeType="xml"
+       attributeName="transform"
+       type="translate"
+       from="-150"
+       to="0"
+       begin="mouseleave"
+       end="mouseenter"
+       dur="0.5s"
+       fill="freeze"
+       id="hideToolbar" />
+    <rect
+       y="0"
+       x="500"
+       height="600"
+       width="450"
+       id="toolbarBackground"
+       style="color:#000000;fill:#ffffff;stroke:none;stroke-width:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:1;opacity:0" />
+    <g
+       id="toolbarItself">
+      <rect
+         style="color:#000000;fill:none;stroke:url(#linearGradient3892);stroke-width:11;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="toolbarContour"
+         width="150"
+         height="600"
+         x="600"
+         y="0" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.70710677px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 655,72 0,50 50,0 0,-50 25,0 -50,-50 -50,50 z"
+         id="arrowUp"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.70710677px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 680,190 -50,0 0,50 50,0 0,25 50,-50 -50,-50 z"
+         id="arrowRight"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <g
+         id="button">
+        <g
+           transform="translate(0,-88)"
+           visibility="hidden"
+           id="magnifier">
+          <set
+             id="showMagnifier"
+             end="click"
+             begin="scissors.click"
+             from="hidden"
+             to="visible"
+             attributeType="CSS"
+             attributeName="visibility" />
+          <rect
+             style="fill:#ffffff;fill-opacity:1"
+             y="381.47369"
+             x="620.21051"
+             height="113.10526"
+             width="114.36842"
+             id="magnifierContour" />
+          <path
+             sodipodi:type="arc"
+             style="color:#000000;fill:url(#radialGradient3970);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;display:inline;overflow:visible;enable-background:accumulate"
+             id="path3946"
+             sodipodi:cx="660.63159"
+             sodipodi:cy="419.52008"
+             sodipodi:rx="35.36842"
+             sodipodi:ry="36.63158"
+             d="m 696.00001,419.52008 c 0,20.23106 -15.83498,36.63158 -35.36842,36.63158 -19.53344,0 -35.36842,-16.40052 -35.36842,-36.63158 0,-20.23106 15.83498,-36.63158 35.36842,-36.63158 19.53344,0 35.36842,16.40052 35.36842,36.63158 z" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             d="m 689.68421,438.46745 44.21052,45.47368 -8.8421,7.57895 -41.68421,-42.94737"
+             id="path3964"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           visibility="visible"
+           id="scissors">
+          <set
+             id="hideScissors"
+             end="magnifier.click"
+             begin="click"
+             from="visible"
+             to="hidden"
+             attributeType="CSS"
+             attributeName="visibility" />
+          <rect
+             style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;marker:none;display:inline;overflow:visible;enable-background:accumulate"
+             id="rect3926"
+             width="101.05266"
+             height="88.421051"
+             x="628.63159"
+             y="304.50925" />
+          <path
+             style="fill:none;stroke:#ff0000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:16, 16;stroke-dashoffset:0"
+             d="m 629.57895,346.14082 100,0"
+             id="path3880-7"
+             inkscape:connector-curvature="0" />
+          <g
+             id="g3946"
+             transform="matrix(0,-0.20752273,0.18172103,0,598.13784,444.58808)">
+            <path
+               style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.54062271;stroke-miterlimit:4;stroke-opacity:1;marker-start:none"
+               sodipodi:nodetypes="cccccczcccccccc"
+               id="path48999"
+               d="m 501,395 c 40,-55 49,-96 62,-92 11,3 6,12 34,19 27,6 54,-16 60,-43 8,-26 -5,-59 -32,-67 -27,-10 -60,6 -70,33 -14,31 -21,72 -67,108 L 453,380 332,551 c -14,22 -22,51 -4,79 L 501,395 z M 631,292 c -23,23 -65,9 -64,-22 -2,-29 33,-54 59,-38 22,11 22,44 6,60 z"
+               inkscape:connector-curvature="0" />
+            <path
+               style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:7.54054499;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none"
+               sodipodi:nodetypes="cccccczcccccccc"
+               id="path49000"
+               d="m 439,397 c -40,-55 -49,-96 -62,-92 -11,3 -6,12 -34,18 -27,6 -54,-16 -60,-43 -8,-26 5,-59 33,-67 27,-10 60,6 70,34 14,31 21,72 67,108 l 35,27 121,171 c 13,22 22,52 4,79 L 439,397 z M 310,294 c 23,23 65,9 65,-22 2,-29 -33,-55 -59,-39 -22,11 -22,44 -6,60 z"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g><g id="textGroup">
+        <g id="textAreaGroup" visibility="hidden">
+          <set attributeName="visibility" to="visible" begin="showTextButton.click" end="hideTextButton.click" fill="freeze" attributeType="CSS" />
+          <set attributeName="visibility" to="hidden" begin="hideTextButton.click" end="showTextButton.click" fill="freeze" attributeType="CSS" />
+          <foreignObject id="textAreaObject" y="170" x="-20" width="600" height="300">
+            <xhtml:head>
+              <xhtml:style>
+                textarea {
+              	  color: black;
+                  background-color: rgba(230, 230, 230, 0.8);
+                  font-weight: bold;
+                  font-size: 1.5em;
+                  width: 600px;
+                  height: 400px;
+                }
+        	  </xhtml:style>
+            </xhtml:head>
+            <xhtml:body>
+              <xhtml:textarea rows="30" cols="60" name="myTextArea" id="textArea" />
+            </xhtml:body>
+          </foreignObject>
+        </g>
+        <g id="textButton">
+         <path d="m 710,500 c -4,0 -7,-5 -9,-14 -1,-4 -2,-10 -4,-18 -4,1 -9,2 -16,3 l -16,3 c -2,5 -5,13 -10,22 -1,2 -3,3 -5,3 -2,0 -3,-1 -4,-2 -1,-1 -2,-3 -2,-4 0,-2 3,-9 9,-21 -1,-1 -1,-2 -1,-4 0,-3 2,-5 6,-6 4,-8 10,-18 17,-29 9,-15 15,-22 17,-22 3,0 5,2 6,6 l 4,20 9,41 3,9 c 1,3 2,5 2,6 0,2 -1,3 -2,4 -1,1 -3,2 -4,2 m -21,-67 -17,27 c 5,-1 12,-3 22,-4 l -5,-23" id="textButtonPath" inkscape:connector-curvature="0" style="fill:#000000;fill-opacity:1" />
+         <rect x="630" y="405" width="100" height="100" id="hideTextButton" opacity="0" visibility="hidden">
+          <set attributeName="visibility" to="hidden" begin="click" attributeType="CSS" />
+          <set attributeName="visibility" to="visible" begin="showTextButton.click" attributeType="CSS" />
+         </rect>
+         <rect x="630" y="405" width="100" height="100" id="showTextButton" opacity="0" visibility="visible">
+          <set attributeName="visibility" to="hidden" begin="click" attributeType="CSS" />
+          <set attributeName="visibility" to="visible" begin="hideTextButton.click" attributeType="CSS" />
+         </rect>
+        </g>
+      </g>
+      <foreignObject
+         height="200"
+         width="150"
+         x="620"
+         y="510"
+         id="fileUploadObject">
+        <xhtml:body>
+          <xhtml:font size="-2">Charger une nouvelle page :
+    		<xhtml:input type="file" id="fileLoad" />
+		  </xhtml:font>
+        </xhtml:body>
+      </foreignObject>
+      
+    </g>
+  </g>
+</svg>

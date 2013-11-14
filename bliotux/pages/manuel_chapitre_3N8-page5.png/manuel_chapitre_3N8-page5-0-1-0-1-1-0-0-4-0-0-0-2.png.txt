@@ -1,0 +1,1 @@
+. h de x égal 5 fois x plus (moins 2) donc la fonction h est affine avec a égal 5 et b égal moins 2.

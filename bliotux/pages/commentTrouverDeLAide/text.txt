@@ -1,0 +1,9 @@
+Pour trouver plus d'aide pour utiliser bliotux, rendez-vous sur la page à cette adresse :
+
+https://mail.gna.org/listinfo/bliotux-users/
+
+Remplissez-y le formulaire (votre adresse mail, un pseudo, votre mot de passe).
+Vous serez ainsi mis en relation par email avec d'autres utilisateurs de bliotux à qui vous pourrez demander de l'aide.
+Il vous suffira d'envoyer un email à cette adresse pour leur demander de l'aide :
+
+bliotux-users@gna.org

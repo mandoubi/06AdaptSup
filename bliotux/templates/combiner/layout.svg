@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="layout.svg"
+   inkscape:version="0.47 r22583"
+   version="1.1"
+   id="svg2816"
+   height="600px"
+   width="800px">
+  <defs
+     id="defs2818">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="800 : 300 : 1"
+       inkscape:persp3d-origin="400 : 200 : 1"
+       id="perspective2824" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.78166667"
+     inkscape:cx="400"
+     inkscape:cy="300"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="721"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2821">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <text
+       xml:space="preserve"
+       x="18.78125"
+       y="111.66666"
+       id="texte"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:300%;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       sodipodi:linespacing="300%"><tspan
+         sodipodi:role="line"
+         x="18.78125"
+         y="111.66666"
+         id="textLine1"
+         style="fill:#ff0000">Un texte au kilomètre c'est un texte qui est tapé</tspan><tspan
+         sodipodi:role="line"
+         x="18.78125"
+         y="207.66666"
+         id="textLine2"
+         style="fill:#00ff00">comme ça et qui prend de la place à l'écran. Lorem</tspan><tspan
+         sodipodi:role="line"
+         x="18.78125"
+         y="303.66666"
+         id="textLine3"
+         style="fill:#0000ff">ipsum je sais plus quoi. Je n'ai jamais été très fort en</tspan><tspan
+         sodipodi:role="line"
+         x="18.78125"
+         y="399.66666"
+         id="textLine4"
+         style="fill:#ff0000">latin. Le renard fait je ne sais plus quoi avec le whisky</tspan><tspan
+         sodipodi:role="line"
+         x="18.78125"
+         y="495.66666"
+         id="textLine5"
+         style="fill:#00ff00">du juge. C'est ça ? Ah non. Bon, on continue à taper</tspan><tspan
+         sodipodi:role="line"
+         x="18.78125"
+         y="591.66663"
+         id="textLine6"
+         style="fill:#0000ff">au kilomètre. D'accord ? Allez, ça suffit comme ça.</tspan></text>
+    <g
+       id="g3769">
+      <text
+         id="text3863"
+         y="56.666668"
+         x="73.818359"
+         style="font-size:32px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial"
+         xml:space="preserve"><tspan
+           style="stroke:none"
+           y="56.666668"
+           x="73.818359"
+           id="title"
+           sodipodi:role="line">Un titre</tspan></text>
+      <rect
+         y="19.189766"
+         x="57.143127"
+         height="48.614059"
+         width="685.71375"
+         id="rect3767"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>

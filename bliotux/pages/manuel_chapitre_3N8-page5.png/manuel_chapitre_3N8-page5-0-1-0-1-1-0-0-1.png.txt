@@ -1,0 +1,5 @@
+On appelle fonction affine toute fonction qui, à tout nombre noté x, associe le
+nombre a fois x plus b (c'est-à-dire x donne a fois x plus b) où a et b sont deux nombres.
+On appelle fonction linéaire de coefficient a toute fonction qui, à tout nombre noté
+x, associe le nombre a fois x (c'est-à-dire x donne a fois x) où a est un nombre.
+

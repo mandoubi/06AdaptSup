@@ -1,0 +1,11 @@
+Pour pouvoir utiliser le logiciel bliotux sans connection à Internet, il faut l'installer sur son disque dur. L'installation est simple. Elle consiste simplement à télécharger le fichier archive qui est à cette adresse (à recopier manuellement dans votre navigateur web) :
+
+http://svn.gna.org/daily/bliotux-snapshot.tar.gz
+
+Une fois téléchargé, vous devez "dézipper" cette archive à l'aide d'un logiciel tel que 7-zip (lui-même téléchargeable gratuitement sur le site http://www.7-zip.org/).
+
+Lorsque vous aurez dézippé le fichier de bliotux sur votre disque dur, vous diposerez d'un répertoire nommé bliotux dans lequel se trouvent plusieurs sous-répertoires (js, pages, templates, ...) ainsi que quelques fichiers dont un fichier nommé index.xhtml
+
+Il vous suffit alors d'aller dans Mozilla Firefox puis d'ouvrir (Menu "Fichier", puis "Ouvrir") le fichier index.xhtml de votre répertoire bliotux.
+
+Ca y est, la page qui s'affiche est celle de bliotux installé sur vote machine.

@@ -1,0 +1,1 @@
+Remarque : Une fonction linéaire est une fonction affine particulière (cas où b égal 0).

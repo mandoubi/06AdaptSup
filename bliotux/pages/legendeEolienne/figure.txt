@@ -1,0 +1,9 @@
+About the figure.svg file in this folder :
+
+Copyright by Wikigraphists of the Graphic Lab (fr)
+Licensing : this image is distributed under the GNU Free
+Documentation License, Version 1.2 or any later version
+published by the Free Software Foundation.
+
+More copyright and licensing information is available at this URL :
+http://commons.wikimedia.org/wiki/File:Schema_eolienne.svg

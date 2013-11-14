@@ -1,0 +1,17 @@
+Pour créer une page bliotux :
+
+1) repérez un exemple de page bliotux dont la structure ("template") correspond à ce que vous désirez
+
+2) identifiez le nom de cette page grâce à l'adresse affichée par votre navigateur Web
+... exemple : file://C:\bliotux\pages\index.xhtml?page=superPage affiche la page "superPage"
+
+2) sur votre disque dur, allez dans le répertoire correspondant à cette page puis copiez-collez ce répertoire.
+... exemple : vous créez ainsi C:\bliotux\pages\copie de superPage\
+
+3) Donnez au nouveau répertoire ainsi créé le nom désiré pour la nouvelle page.
+... exemple : renommé en C:\bliotux\pages\maNouvellePage
+
+4) Affichez cette nouvelle page dans votre navigateur Web
+... exemple : pour cela, allez sur file://C:\bliotux\pages\index.xhtml?page=maNouvellePage
+
+5) Modifiez cette nouvelle page.

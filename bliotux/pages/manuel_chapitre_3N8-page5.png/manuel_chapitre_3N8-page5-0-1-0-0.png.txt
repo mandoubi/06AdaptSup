@@ -1,0 +1,3 @@
+Méthode 1 : Reconnaître une fonction affine ou linéaire,
+ calculer l'image d'un nombre
+

@@ -1,0 +1,3 @@
+Méthode 2 : Déterminer, par le calcul, l'antécédent
+d'un nombre par une fonction affine ou linéaire
+

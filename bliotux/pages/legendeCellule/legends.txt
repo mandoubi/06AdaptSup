@@ -1,0 +1,9 @@
+Capsule
+Flagelle
+Paroi cellulaire
+Plasmides
+Prisonnier
+Cytoplasme
+Geolier
+Membrane plasmique
+Nucleoide

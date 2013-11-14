@@ -1,0 +1,12 @@
+. ef de x = 2 fois x donc la fonction ef est linéaire avec a égal 2.
+. La fonction gé n'est ni affine ni linéaire car on doit élever x au carré.
+. h de x égal 5 fois x plus (moins 2) donc la fonction h est affine avec a égal 5 et b égal moins 2.
+
+. ef de 3 égal 2 fois 3. On remplace x par 3.
+  ef de 3 égal 6. On calcule.
+  L'image de 3 par la fonction f est 6.
+  
+. h de moins 7 égal 5 fois (moins 7) moins 2
+  h de moins 7 égal moins 37
+  L'image de moins 7 par la fonction h est moins 37.
+

@@ -1,0 +1,7 @@
+Le nom de la page bliotux apparaît dans la barre d'adresse du navigateur Web.
+Exemple : l'adresse file://C:\bliotux\index.xhtml?page=commentModifier indique que la page que vous lisez actuellement s'appelle "commentModifier".
+
+Chaque page existe sous la forme d'un répertoire.
+Exemple : C:\bliotux\pages\commentModifier\
+
+Pour modifier une page, il suffit de modifier le contenu des fichiers de ce répertoire puis d'actualiser votre navigateur Web (touche F5 ou Ctrl+R).

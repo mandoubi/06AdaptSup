@@ -1,0 +1,1 @@
+. La fonction gé n'est ni affine ni linéaire car on doit élever x au carré.

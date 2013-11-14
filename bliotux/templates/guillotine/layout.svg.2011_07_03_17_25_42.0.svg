@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800px"
+   height="600px"
+   id="svg3228"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="layout.svg">
+  <defs
+     id="defs3230">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="800 : 300 : 1"
+       inkscape:persp3d-origin="400 : 200 : 1"
+       id="perspective3236" />
+    <inkscape:perspective
+       id="perspective3324"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.895"
+     inkscape:cx="385"
+     inkscape:cy="300"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="753"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="0,1"
+       position="130.10526,601.26316"
+       id="guide3039" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="0,601.26316"
+       id="guide3043" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3233">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <image
+       xlink:href="file:///home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/image/image.jpg"
+       width="0"
+       height="0"
+       id="image"
+       x="0"
+       y="0" />
+    <image
+       y="0"
+       x="0"
+       id="image-0-0"
+       height="253"
+       width="385"
+       xlink:href="file:///home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/image/image.jpg"
+       class="stub" />
+    <image
+       y="0"
+       x="385"
+       id="image-1-0"
+       height="253"
+       width="385"
+       xlink:href="file:///home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/image/image.jpg"
+       class="stub" />
+    <image
+       y="253"
+       x="0"
+       id="image-0-1"
+       height="253"
+       width="385"
+       xlink:href="file:///home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/image/image.jpg"
+       class="stub" />
+    <image
+       y="252"
+       x="385"
+       id="image-1-1"
+       height="253"
+       width="385"
+       xlink:href="file:///home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/image/image.jpg"
+       class="stub" />
+    <a
+       xlink:href="http://www.bing.com/">
+      <image
+         y="527"
+         x="258.5"
+         id="arrowNext"
+         xlink:href="file:///home/jean/Desktop/techno/eclipse-workplace/bliotux.wecena/templates/guillotine/arrowNext.png"
+         height="73"
+         width="283" />
+    </a>
+  </g>
+</svg>

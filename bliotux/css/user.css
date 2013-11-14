@@ -1,0 +1,92 @@
+/*
+# -*- coding: utf-8 -*-
+#
+# File: user.css
+#
+# Copyright (c) 2009 by Jean Millerat, 8 square de Batz, 78310 MAUREPAS
+# (Jean.Bliotux@wecena.com)
+#
+# GNU Affero General Public License (AGPL)
+#
+# This file is part of a program which is free software: you can
+# redistribute it and/or modify it under the terms of the
+# GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+*/
+
+.textBody {
+    font-family:Arial;
+    font-size:20px;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-stretch:normal;
+    text-align:start;
+    text-decoration:underline;
+/*    writing-mode:lr-tb;*/
+    text-anchor:start;
+}
+
+#title {
+    font-family:Arial;
+    font-size:30px;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:bold;
+    font-stretch:normal;
+    text-align:start;
+    text-decoration:underline;
+/*    writing-mode:lr-tb;*/
+    text-anchor:start;
+}
+
+.line0 {
+	fill: red;
+	color: red;
+}
+
+.line1 {
+	fill: green;
+	color: green;
+}
+
+.line2 {
+	fill: blue;
+	color: blue;
+}
+
+.textBox {
+	font-family: OpenDyslexic, Eulexia, "Comic Sans MS", verdana, arial, helvetica, sans-serif !important;
+    font-size: 12px;
+}
+
+.sizeMe {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-left: 8px solid yellow;
+	border-right: 8px solid pink;
+	line-height: 400%;
+	word-spacing: 2em;
+}
+
+.textLine:nth-of-type(3n+1) {
+	color: red;
+}
+
+.textLine:nth-of-type(3n+2) {
+	color: green;
+}
+
+.textLine:nth-of-type(3n+0) {
+	color: blue;
+}

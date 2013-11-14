@@ -1,0 +1,657 @@
+<html>
+    <!--
+    # File: README.html
+    #
+    # Copyright (c) 2009
+    # by Jean Millerat, 8 square de Batz, 78310 MAUREPAS
+    # (Jean.Bliotux@wecena.com)
+    #
+    # GNU Affero General Public License (AGPL)
+    #
+    # This file is part of a program which is free software: you can
+    # redistribute it and/or modify it under the terms of the
+    # GNU Affero General Public License as published by
+    # the Free Software Foundation, either version 3 of the License, or
+    # (at your option) any later version.
+    #
+    # This program is distributed in the hope that it will be useful,
+    # but WITHOUT ANY WARRANTY; without even the implied warranty of
+    # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    # GNU Affero General Public License for more details.
+    #
+    # You should have received a copy of the GNU Affero General Public
+    # License along with this program.
+    # If not, see <http://www.gnu.org/licenses/>.
+    #
+    # -->
+    <head>
+        <title>Wecena.Bliotux</title>
+        <script type="text/javascript" src="../js/doctestjs/doctest.js">
+        </script>
+        <!-- This stylesheet is optional: -->
+        <link rel="stylesheet" type="text/css" href="../js/doctestjs/doctest.css">
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+            }
+            
+            hr {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>wecena.bliotux</h1>
+        <p>
+            This software package is a framework for building web applications having the following buzzwords
+            <ul>
+                <li>
+                    <strong>web</strong>
+                    apps: run in your web browser
+                </li>
+                <li>
+                    <strong>offline</strong>
+                    apps: no web server, no Internet connection required
+                </li>
+                <li>
+                    <strong>rich</strong>
+                    applications : highly graphical user interfaces, using SVG
+                </li>
+                <li>
+                    <strong>animated</strong>
+                    applications : pages can include (interactive) animations using (SMIL-powered) animated SVG templates
+                </li>
+                <li>
+                    <strong>interactive</strong>
+                    : interaction/behaviour is defined in a  simple Javascript file corresponding to a given page
+                </li>
+                <li>
+                    with <strong>persistence</strong>
+                    of user data and application state : using local storage with persistence engines such as Google Gears (or HTML5 localstorage when it's mature enough in Firefox)
+                </li>
+                <li>
+                    <strong>template-based</strong>
+                    : pages sharing a common layout/structure are based on template files
+                </li>
+                <li>
+                    <strong>document-oriented</strong>: a simple data structure in a data.js file defines the data used to populate the corresponding SVG template for any given page
+                </li>
+                <li>
+                    <strong>free software</strong>: distributed under the Affero GPL License (even though I am not 100% sure of the exact meaning of the Affero version for offline applications BTW...)
+                </li>
+                <li>
+                    based on <strong>open standards</strong>: SVG now (Daisy Profile for SMIL+SVG, CSS and WAI-ARIA in the roadmap) rather than based on proprietary technologies such as Microsoft Silverlight or Adobe Flash
+                </li>
+                <li>
+                    highly <strong>accessible</strong>
+                    even though using JavaScript (see open standards...)
+                </li>
+                <li>
+                    as <strong>cross-browser</strong>
+                    compatible as possible: apps should run on any web browser as long as they offer some support for SVG and Javascript; and bliotux users should not have to care much about browser compatibily.
+                </li>
+            </ul>
+        </p>
+        <p>
+            The original aim of this package is to build a non-Flash interactive animations management framework so that<a href="http://www.wecena.com/beneficiaires/dyspraxique-mais-fantastique-dmf/adaptation-de-manuels-scolaires-pour-enfants-ayant-des-troubles-de-lapprentissage">accessible
+                textbooks can be made for children with cognitive disabilities (mainly dyspraxia)</a>.
+            But it could be used to produce any set of interactive animations
+            such as books, websites, interactive animations or I don't know what.
+            You imagine.
+            You experiment.
+            You tell me what it may be useful for !
+        </p>
+        <p>
+            The following JavaScript libraries are used
+            <ul>
+                <li>
+                    <a href="http://jquery.com/">jQuery</a>
+                </li>
+                <li>
+                    <a href="http://keith-wood.name/svg.html">jQuery.SVG</a>
+                    (<a href="http://raphaeljs.com/">RaphaelJS</a>
+                    might have been a better choice).
+                </li>
+                <li>
+                    <a href="http://code.google.com/p/jquery-jstore/">jQuery.jStore</a>
+                    (<a href="http://pablotron.org/software/persist-js/">PersistJS</a>
+                    might have been an acceptable choice).
+                </li>
+                <li>
+                    <a href="http://gears.google.com/">Google Gears</a>
+                    (as a dependency of jStore because <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=507361">the implementation of HTML localstorage by Firefox has a bug</a>)
+                </li>
+                <li>
+                    <a href="http://blog.ianbicking.org/javascript-doctest.html">doctestjs</a>
+                    (because I would be so cool if only I could figure out how to use Javascript doctests for this project...)
+                </li>
+            </ul>
+        </p>
+        <p>
+            <em>Disclaimer with regards to JavaScript as a programming language :</em>
+            Ahemm... Javascript was selected because we wanted to have one and only one language to be used both for the making
+            of bliotux-powered templates and pages and for their execution.
+            And their execution should not require any
+            prior installation of software : the web browser should be the only required stuff.
+            And Javascript seems to be the only open-standards-oriented way to offer rich interactivity to SVG in web browsers.
+            Too bad.
+        </p>
+        <h1>How to use wecena.bliotux ?</h1>
+        <p>
+            At the moment wecena.bliotux is nothing but a proof-of-concept.
+            More will come in case the project I'm working on selects this technology
+            as a viable alternative to the Flash-based proprietary product we are
+            currently using in order to make accessible textbooks for children
+            with cognitive disabilities.
+        </p>
+        <h2>Download and install bliotux</h2>
+        <p>
+            It's in <a href="http://svn.gna.org/svn/wecena/trunk/wecena.bliotux/">a subversion repository</a>. 
+            There is <a href="https://gna.org/svn/?group=wecena">some subversion documentation available in
+                case you don't know how to download software from a subversion repository</a>. Bliotux is stored
+            in the wecena repository but it will get its own repository some day.
+        </p>
+        <h2>Create a template</h2>
+        <p>
+            Bliotux pages are based on templates.
+            Let's create a first template.
+        </p>
+        <h3>Name your template</h3>
+        <p>
+            Choose a name for your template. In this example, 
+            the name is 
+            <code>
+                simpleOperation
+            </code>
+            because it is a template page for textbooks
+            for children learning additions and other simple mathematical operations.
+        </p>
+        <p>
+            Name a template folder accordingly. 
+            For instance, I have 
+            <code>
+                wecena.bliotux/templates/simpleOperation/
+            </code>
+        </p>
+        <h3>Define the layout of your template</h3>
+        <p>
+            This part is the job of a graphics designer.
+        </p>
+        <p>
+            The layout of a template is defined by a SVG file.
+            (Download, install and) use any SVG editor to create such a file.
+            I personnally use Inkscape, which is free software.
+        </p>
+        <p>
+            Your SVG template should be named 
+            <code>
+                layout.svg
+            </code>
+            and 
+            should be stored under the template folder.  
+            Here it goes: 
+            <code>
+                wecena.bliotux/templates/simpleOperation/layout.svg
+            </code>
+        </p>
+        <p>
+            The next version of Inkscape should allow you to use its new timeline-based animation editor capabilities to add
+            animation to your template.
+            At the moment, you will have to have an XML developer edit the source code of your SVG
+            template and add animation (animated SVG) instructions "by hand" if needed.
+        </p>
+        <p>
+            Here is a clue about how to possibly accelerate the development of such SVG animations without waiting for the 
+            next version of Inkscape : 
+            <ol>
+                <li>
+                    Download and install Open Office Impress
+                </li>
+                <li>
+                    Make a (duplicate) sketch of your layout in Impress
+                </li>
+                <li>
+                    Add the desired animation effects to it using the rich set of animation features Impress offers
+                </li>
+                <li>
+                    Save your animated Impress presentation in its native .ODP format
+                </li>
+                <li>
+                    Open this file using an archive handler (such as winzip under windows) :
+                    Open Office files are nothing but ZIP archives containing XML and graphics
+                </li>
+                <li>
+                    Edit the source code of the main XML file this .ODP archive contains.
+                </li>
+                <li>
+                    Ask your XML developer to copy, paste and adapt the animations instructions therein 
+                    into your 
+                    <code>
+                        layout.svg
+                    </code>
+                    file. 
+                    (The animation instructions can easily be located : they use the 
+                    <code>
+                        anim:
+                    </code>
+                    namespace).
+                </li>
+            </ol>
+        </p>
+        <h3>Create a model for your template</h3>
+        <p>
+            This is the job of a Javascript developer.
+        </p>
+        <p>
+            Your template will be filled and manipulated with data that is specific to the page being rendered.
+            That is the purpose of a template.
+        </p>
+        <p>
+            In order to make the job of page creators as easy as possible, 
+            you have to create a 
+            <code>
+                model.js
+            </code>
+            file which file describe what data each page can modify or define.
+            This file also defines how this data is used in order to fill and manipulate the template.
+        </p>
+        <p>
+            It has two parts : 
+            <ol>
+                <li>
+                    the definition of default values for template variables, as a big associative array 
+                    called 
+                    <code>
+                        data
+                    </code>
+                </li>
+                <li>
+                    the definition of a 
+                    <code>
+                        manipulate
+                    </code>
+                    function which will be called by bliotux and makes use 
+                    of the 
+                    <code>
+                        data
+                    </code>
+                    variable in order to make the page. This is the function where you would use 
+                    jQuery selectors and DOM manipulation functions in order to locate certain elements 
+                    in the template and change them according to the 
+                    page-specific values found in 
+                    <code>
+                        data
+                    </code>.
+                </li>
+            </ol>
+        </p>
+        <p>
+            In the manipulate function, rather than using 
+            <code>
+                id
+            </code>
+            attributes as selectors (
+            <code>
+                #pageCentaine
+            </code>
+            ), it seems preferable to use
+            <code>
+                class
+            </code>
+            attributes (
+            <code>
+                .pageCentaine
+            </code>
+            ) which carry the meaning (semantics) of the corresponding SVG element and can be reused 
+            several times in the same template (whereas IDs should be unique, I suppose).  
+            Anyway, the SVG template should be edited so that the corresponding 
+            <code>
+                class
+            </code>
+            attribute are present where needed.
+        </p>
+        <p>
+            Using this model, you may have bliotux include some page-specific
+			bitmap (JPEG, PNG,...) files in pages.  
+            This is just the matter of including such a JPEG file in the 
+            <code>
+                layout.svg
+            </code>
+            file, 
+            giving the corresponding SVG element an appropriate class attribute (using Inkscape XML editor for instance)  
+            and then adding to the <code>manipulate</code> function of the
+            <code>
+                model.js
+            </code> file the ability to use the <code>data</code> variable to locate a given file and use it
+			in the SVG document so that it gets graphically inserted where appropriate.
+        </p>
+        <p>
+            But you can also have given pages include full SVG files. 
+            For instance, the left part of 
+            <code>
+                simpleOperation/layout.svg
+            </code>
+            is meant to display a funny or didactic illustration
+            where characters (such as Tux the penguin) invite the child to perform the mathematical operation at hand.
+            Such an illustration could even contain page-specific animations.
+            Adding an animated GIF file would not be enough.
+            The full power of SVG for animations may be required.
+            If you want to do so, you should have <code>data</code> define the name of the SVG file to include in your page :
+<pre>data = {
+    'fileName': 'mySVGFile.svg'
+};
+</pre>
+            Then the <code>manipulate</code> function should include some lines similar to this :
+<pre>
+	// Fill the illustration
+	insertSvgFile(
+	    data['fileName'],
+		'#idOfTheSVGElementWhereThisFileShouldBeInserted',
+		root
+	);
+</pre>
+            This calls a bliotux function which will load the mySVGFile.svg file, take its content, look
+			for the first SVG group (<code>&lt;g&gt;</code> tag) it finds inside and insert this group in the page
+			at the element with the ID "#idOfTheSVGElementWhereThisFileShouldBeInserted".</p>
+			<p>In case the geometry of the inserted image does not fit the space it is to be inserted in, you can
+			either modify the included file with Inkscape so that it is properly sized and positioned. Or you can
+			have your template model modify its geometry afterhands by adding a <code>transform</code> SVG attribute
+			to it, with the appropriate <code>scale</code>, <code>rotate</code> and/or <code>translate</code>
+			instructions.
+        <p>
+            See the 
+            <code>
+                model.js
+            </code>
+            files of example templates for more information.
+        </p>
+        <h3>Define the interactivity of your template</h3>
+        <p>
+            This part is the job of a Javascript developer.
+        </p>
+        <p>
+            This is the hardest part if you are not a developer.
+            It should be easy if you have any experience in web development.
+        </p>
+        <p>
+            In the case of a children textbook for teaching additions and other simple mathematical operations, 
+            we'd like our "simpleOperation" template to display a simplified virtual keyboard with numbers.  
+            When the child clicks on a number, this number is added to a "result" text element in the template layout. 
+            So we need to know how to use an SVG element (the number we want to click on) as an interactive button 
+            which will display some text result as the content of an other SVG element.
+        </p>
+        <p>
+            The interactivity of your template is first prepared in your 
+            <code>
+                layout.svg
+            </code>
+            file.
+            Using Inkscape XML Editor (Ctrl + Shift + X), you add event attributes
+            to the SVG elements you want to add some interactivity to. This involves accessing
+            the XML source code of the SVG file, which you should not be afraid of thanks to
+            Inkscape XML Editor.
+        </p>
+        <p>
+            For instance, let's say you have a SVG group of elements which you want to 
+            act as a button. You select this group using Inkscape. You press Ctrl+Shift+X. The  
+            XML Editor opens. There you see the group of elements as a &lt;g ... &gt; element. 
+            You then want to add interactivity to this group. You have to add a 
+            <code>
+                onclick
+            </code>
+            attribute.
+            The value of this attribute should be "clickButton(evt)". This means that whenever the
+            user mouse clicks on this button, a MouseEvent event called "evt" will be fired and
+            some Javascript function called "clickButton" will have to handle this event so that
+            something special happens.
+        </p>
+        <p>
+            Now you have injected some interactivity attributes into the XML source code of
+            the SVG file of your template. This source code now includes things like this :
+            <code>
+                &lt;g onclick="clickButton(evt)" ...
+            </code>
+        </p>
+        <p>
+            Let's develop this clickButton Javascript function so that you define what should
+            happen whenever the button is clicked. This definition is written in a Javascript file
+            you have to name "interaction.js" and which sits under the template folder:
+            <code>
+                wecena.bliotux/templates/simpleOperation/interaction.js
+            </code>
+        </p>
+        <p>
+            For instance, this file could contain the code below (see included examples, too, if needed) :<pre>
+function clickButton(evt){
+    alert('You clicked the button !');
+    $('.whereResultShouldBeDisplayed', svg.root()).html('Clicked !');
+    $('.someSVGElementsWhichShouldBeEmptiedWhenButtonGetsClicked', svg.root()).html('');
+    storageSave('.whereResultShouldBeDisplayed', 'Clicked !');
+    storageSave('.someSVGElementsWhichShouldBeEmptiedWhenButtonGetsClicked, '');
+}
+</pre>
+        </p>
+        <p>
+            If you are as unfamiliar with Javascript as I am, you need some more explanations here.
+            What does this function says ?
+        </p>
+        <p>
+            It says that it takes an input parameter called "evt". But it won't use it in this case.
+        </p>
+        <p>
+            It first displays a popup alert window with a message ('You clicked...')
+        </p>
+        <p>
+            Then it changes the content of the SVG displayed in the web browser. It writes the text 'Clicked !' in
+            every SVG (or HTML BTW) element which has an attribute called "class" (the same attribute which can be used
+            for CSS files) including the value "whereResultShouldBeDisplayed".
+        </p>
+        <p>
+            For instance, let's say you have this text element in your layout.svg file :<pre>
+&lt;text
+  id="text4790"
+  y="386.98224"
+  x="454.43787"&gt;
+  &lt;tspan
+    y="386.98224"
+    x="454.43787"
+    id="tspan4786"
+    class="whereResultShoudlBeDisplayed someOtherClass"&gt;Not clicked yet.&lt;/tspan&gt;
+&lt;/text&gt;
+</pre>
+            Then, once the user clicks the button, your interaction.js file will have this text element changed into this :<pre>
+&lt;text
+  id="text4790"
+  y="386.98224"
+  x="454.43787"&gt;
+  &lt;tspan
+    y="386.98224"
+    x="454.43787"
+    id="tspan4786"
+    class="whereResultShoudlBeDisplayed someOtherClass"&gt;Clicked !&lt;/tspan&gt;
+&lt;/text&gt;
+</pre>
+        </p>
+        <p>
+            Can you see the difference ?
+        </p>
+        <p>
+            For more information about how Javascript can have the web browser manipulate
+            the content of the page at runtime, please see jQuery API documentation. Just remember to
+            apply jQuery selectors to the root of the SVG document (
+            <code>
+                svg.root()
+            </code>) and you should be fine.
+        </p>
+        <p>
+            There is also this call to storageSave in your interactivity function. What does it mean ?
+        </p>
+        <p>
+            <code>
+                storageSave
+            </code>
+            is a function defined by bliotux. 
+            It takes 2 input parameters : a key and its value.  
+            It will have this pair of (key, value) made persistent in the local web browser. 
+            Even if the browser (and possibly computer) is closed (shutdown), this (key, value) pair is still available  
+            and can be later retrieved using another bliotux function : 
+            <code>
+                storageLoad(key)
+            </code>.
+            Next time the same page is displayed, any SVG element which corresponds to key (as a jQuery selector) will have
+            its content filled with value.
+        </p>
+        <p>
+            In this example, storing the text 
+            <code>
+                "Clicked !"
+            </code>
+            as 
+            the value of the key 
+            <code>
+                .whereResultShouldBeDisplayed
+            </code>
+            means 2 things:
+            <ol>
+                <li>
+                    this text 
+                    <code>
+                        "Clicked !"
+                    </code>
+                    can be further retrieved with any Javascript call to 
+                    <code>
+                        storageLoad('.whereResultShouldBeDisplayed')
+                    </code>
+                </li>
+                <li>
+                    next time this page is displayed using the same web browser, the 
+                    <code>
+                        "Clicked !"
+                    </code>
+                    text will be added to all SVG elements which have the 
+                    <code>
+                        whereResultShouldBeDisplayed
+                    </code>
+                    class attribute in their source code.
+                </li>
+            </ol>
+            As a result of this, the state of each page can be made persistent
+            so that when the user returns to a given page he already interacted with
+            this page displays the exact same info/aspect/behaviour as before.
+        </p>
+        <p>
+            Now you have your 
+            <code>
+                interaction.js
+            </code>
+            file which defines the full interactivity of your template document.
+        </p>
+        <h2>Create a page</h2>
+        <p>
+            Creating a page is much easier than creating the template a page is based on.
+            But it requires writing some (extremely simple) code using any text editor (Windows notepad...).
+            Any brave user should be enabled to do so.
+        </p>
+        <p>
+            You have a full bliotux template, including an SVG layout (possibly including animation) and Javascript interactivity.
+            Now let's create a page based on this template.
+        </p>
+        <h3>Name the folder with the page name</h3>
+        <p>
+            In this example, let's name a first page 
+            <code>
+                Sesamath_CP_page-094_exercice-001
+            </code>
+            along the name of a French free (as in free speech) textbook vendor. 
+            In order to do so, we create this folder: 
+            <code>
+                wecena.bliotux/pages/Sesamath_CP_page-094_exercice-001/
+            </code>
+        </p>
+        <p>
+            When we want to access this page, we'll have to direct our web browser to such an URL as
+            <code>
+                file:///home/jean/wecena.bliotux/index.xhtml?page=Sesamath_CP_page-094_exercice-001
+            </code>
+        </p>
+        <h3>Define the template this page uses</h3>
+        <p>
+            Which template will this page use ? 
+            The answer comes as a Javascript file we have to create: 
+            <code>
+                wecena.bliotux/pages/Sesamath_CP_page-094_exercice-001/data.js
+            </code>
+        </p>
+        <p>
+            This file contains the declaration of variables describing this page. 
+            The variable called template defines the template to be used for this page: <pre>
+var template = 'simpleOperation';
+</pre>
+        </p>
+        <h3>Populate the template</h3>
+        <p>
+            The next variable in this 
+            <code>
+                data.js
+            </code>
+            file define data which will get injected into the template so that
+            the page is built :<pre>
+var data = {
+  'pageCentaine':'',
+  'pageDizaine':'9',
+  'pageUnite':'4',
+  'exerciceCentaine':'',
+  'exerciceDizaine':'',
+  'exerciceUnite':'2',
+  'operande1Centaine':'',
+  'operande1Dizaine':'',
+  'operande1Unite':'7',
+  'operateur':'-',
+  'operande2Centaine':'',
+  'operande2Dizaine':'',
+  'operande2Unite':'5',
+  'resultatCentaine':'',
+  'resultatDizaine':'',
+  'resultatUnite':'',
+  'illustrationFileName': 'myIllustration.svg'
+};
+</pre>
+        </p>
+        <p>
+            This data associative array lists (key, value) pairs which define which content should be injected where. 
+            The key (for instance 
+            <code>
+                pageCentaine
+            </code>
+            ) is an arbitrary name which is defined in the model file of your template.
+            The value is anything the model of your template is ready to use for this key.
+            In the data example above, most of the values are pieces of text which the model of the template will
+            use in order to fill the corresponding SVG elements with page-specific text.
+        </p>
+        <p>
+            Some template models will accept (key,value) pairs in their 
+            <code>
+                data
+            </code>
+            variable which will
+            indicate the name of graphics files (either JPEG or SVG, depending on the template model) which can
+            be included in the page. So not only the text of the page can change but graphics can also vary among
+            pages sharing a common template. This is the case in the example above where the SVG file called
+			<code>myIllustration.svg</code> may be used by the template model.
+        </p>
+        <h1>That's it</h1>
+        <p>
+            You can access and test your page at a URL which should look a bit like that (the exact path depends on the folder hierarchy 
+            on your hard drive): 
+            <code>
+                file:///home/jean/wecena.bliotux/index.xhtml?page=Sesamath_CP_page-094_exercice-001
+            </code>
+        </p>
+        <p>
+            Side note : Now I realize I can't use doctestjs for this document so it's pretty useless to me.
+            It would have been much useful if only I had figured out a way to have some Javascript code generate
+            a template document in the filesystem during the doctest so that I can further test bliotux on it
+            using doctestjs. Maybe later...
+        </p>
+    </body>
+</html>

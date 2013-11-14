@@ -1,0 +1,11 @@
+Mat
+Generateur
+Armoire de couplage au reseau electrique
+Fondations
+Moyeu et commande rotor
+Multiplicateur
+Nacelle
+Systeme d'orientation
+Systeme de regulation electrique
+Frein
+Pale

@@ -8,7 +8,7 @@ Dys'doc, Dys'Doc, Dys*doc, Dys-doc, CnedBook, CnedLivre, AccessiCned, AccessiLiv
 Fonctions principales
 ---------------------
 
-**Pour les Tuteurs** (et autres personnes s'occupant de rendre accessibles les contenus)
+**Pour les Tuteurs** (et autres personnes s'occupant de rendre accessibles les contenus) L'atelier d'adaptation
 - Découpage en blocs sémantiques et tagage des documents scannés
 - Rédaction et/ou génération par OCR des alternatives textuelles aux images des blocs sémantiques extraits des scans
 - Enregistrement vocal et synthèse vocale des alternatives audio aux images des blocs sémantiques extraits des scans

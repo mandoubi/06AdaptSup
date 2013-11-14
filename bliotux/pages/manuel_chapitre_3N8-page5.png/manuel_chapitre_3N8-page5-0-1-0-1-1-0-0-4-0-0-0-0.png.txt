@@ -1,0 +1,1 @@
+. ef de x = 2 fois x donc la fonction ef est linéaire avec a égal 2.
