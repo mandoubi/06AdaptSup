@@ -3,6 +3,21 @@ html(lang="fr")
 	include ../../templateModules/head
 	body
 		include ../../templateModules/menuTuteur
+		#bar-outil
+			ul
+				li
+					img(src="cdn/icones.svg/rotate.svg",title="rotation")
+				li
+					img(src="cdn/icones.svg/ligne-decoupe-horizontale.svg",title="placer une ligne de découpe horizontale")
+					.multi-icones(title="placer une ligne de découpe verticale, maintenir la touche Ctrl (Contrôle) pour une bascule rapide vers cet outil.")
+						img(src="cdn/icones.svg/ligne-decoupe-verticale.svg")
+						img(src="cdn/icones.svg/ctrl.svg")
+				li
+					img(src="cdn/icones.svg/text.svg",title="rédiger l'alternative textuelle d'un bloc")
+				li
+					img(src="cdn/icones.svg/icone-manquante.svg",title="enrégister une alternative vocale d'un bloc")
+
+
 		.container
 			img(src="data/rawScan/1.jpg")
 		include ../../templateModules/footer

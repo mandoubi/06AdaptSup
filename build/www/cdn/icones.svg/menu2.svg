@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   width="16px"
+   height="16px"
+   viewBox="0 0 16 16"
+   enable-background="new 0 0 16 16"
+   xml:space="preserve"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="Flaticon_8722.svg"><metadata
+   id="metadata27"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs25" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview23"
+   showgrid="false"
+   inkscape:zoom="14.75"
+   inkscape:cx="8"
+   inkscape:cy="8"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Capa_1" />
+<g
+   id="g3">
+	<path
+   d="M4,1H2C1.448,1,1,1.448,1,2v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1V2C5,1.448,4.552,1,4,1z"
+   id="path5" />
+	<path
+   d="M9,1H7C6.448,1,6,1.448,6,2v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1V2C10,1.448,9.552,1,9,1z"
+   id="path7" />
+	<path
+   d="M14,1h-2c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1V2C15,1.448,14.552,1,14,1z"
+   id="path9" />
+	<path
+   d="M4,6H2C1.448,6,1,6.448,1,7v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1V7C5,6.448,4.552,6,4,6z"
+   id="path11" />
+	<path
+   d="M9,6H7C6.448,6,6,6.448,6,7v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1V7C10,6.448,9.552,6,9,6z"
+   id="path13" />
+	<path
+   d="M14,6h-2c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1V7C15,6.448,14.552,6,14,6z"
+   id="path15" />
+	<path
+   d="M4,11H2c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-2C5,11.448,4.552,11,4,11z"
+   id="path17" />
+	<path
+   d="M9,11H7c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-2C10,11.448,9.552,11,9,11z"
+   id="path19" />
+	<path
+   d="M14,11h-2c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-2C15,11.448,14.552,11,14,11z"
+   id="path21" />
+</g>
+</svg>
