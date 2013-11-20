@@ -38,31 +38,21 @@ img {
 }
 #bar-outil ul {
   margin-left: 0;
+  margin-bottom: 10px;
   list-style: none;
 }
 #bar-outil li {
   clear: both;
-}
-#bar-outil li > * {
   border: 1px solid #000;
   border-left: 0;
   width: 48px;
   height: 49px;
   margin-top: -1px;
-  float: left;
-  display: none;
-}
-#bar-outil li > *:first-child {
-  display: block;
-  border-top: 0;
-  height: 48px;
-  margin-top: 0;
-}
-#bar-outil li:hover > * {
-  display: block;
 }
 #bar-outil li > img {
   padding: 8px;
+  width: 100%;
+  height: 100%;
 }
 .multi-icones > * {
   position: absolute;

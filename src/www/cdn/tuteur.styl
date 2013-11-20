@@ -50,28 +50,20 @@ epaisseurBordure = 1px
 
 	ul
 		margin-left 0
+		margin-bottom 10px
 		list-style none
 
 	li
 		clear both
-		> *
-			border epaisseurBordure solid black
-			border-left 0
-			width tailleIcone
-			height tailleIcone + epaisseurBordure
-			margin-top - epaisseurBordure
-			float left
-			display none
-			&:first-child
-				display block
-				border-top 0
-				height tailleIcone
-				margin-top 0
-		&:hover > *
-			display block
-
+		border epaisseurBordure solid black
+		border-left 0
+		width tailleIcone
+		height tailleIcone + epaisseurBordure
+		margin-top - epaisseurBordure
 		> img
 			padding (tailleIcone/6)
+			width 100%
+			height 100%
 
 .multi-icones
 
