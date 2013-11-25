@@ -42,16 +42,21 @@ img
 	clear both
 
 
+
+ul
+	margin-left 0
+	margin-bottom 10px
+	list-style none
+
 epaisseurBordure = 1px
 #bar-outil
 	position fixed
 	top 50px
 	left 0
-
-	ul
-		margin-left 0
-		margin-bottom 10px
-		list-style none
+	bottom 0
+	background-color #eee
+	width 49px
+	border-right 1px solid black
 
 	li
 		clear both
@@ -60,10 +65,22 @@ epaisseurBordure = 1px
 		width tailleIcone
 		height tailleIcone + epaisseurBordure
 		margin-top - epaisseurBordure
-		> img
+		label
+			display block
+		label > img, > img
 			padding (tailleIcone/6)
+			cursor pointer
 			width 100%
 			height 100%
+	input
+		display none
+	li ul
+		display none
+		position absolute
+		top 250px
+
+	li input:checked ~ ul
+		display block
 
 .multi-icones
 
@@ -79,3 +96,24 @@ epaisseurBordure = 1px
 		height (2*tailleIcone/3)
 		margin (tailleIcone/6)
 
+.bar-nav
+	position fixed
+	top 50px
+	left 49px
+	right 0px
+	background-color #eee
+	height 49px
+	border-bottom 1px solid black
+	li
+		display inline-block
+		clear both
+		border epaisseurBordure solid black
+		border-left 0
+		width tailleIcone
+		height tailleIcone + epaisseurBordure
+		margin-top - epaisseurBordure
+		> img
+			padding (tailleIcone/6)
+			cursor pointer
+			width 100%
+			height 100%

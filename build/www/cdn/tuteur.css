@@ -31,15 +31,19 @@ img {
 .col-sm-12 {
   clear: both;
 }
+ul {
+  margin-left: 0;
+  margin-bottom: 10px;
+  list-style: none;
+}
 #bar-outil {
   position: fixed;
   top: 50px;
   left: 0;
-}
-#bar-outil ul {
-  margin-left: 0;
-  margin-bottom: 10px;
-  list-style: none;
+  bottom: 0;
+  background-color: #eee;
+  width: 49px;
+  border-right: 1px solid #000;
 }
 #bar-outil li {
   clear: both;
@@ -49,10 +53,26 @@ img {
   height: 49px;
   margin-top: -1px;
 }
+#bar-outil li label {
+  display: block;
+}
+#bar-outil li label > img,
 #bar-outil li > img {
   padding: 8px;
+  cursor: pointer;
   width: 100%;
   height: 100%;
+}
+#bar-outil input {
+  display: none;
+}
+#bar-outil li ul {
+  display: none;
+  position: absolute;
+  top: 250px;
+}
+#bar-outil li input:checked ~ ul {
+  display: block;
 }
 .multi-icones > * {
   position: absolute;
@@ -67,4 +87,28 @@ img {
   width: 32px;
   height: 32px;
   margin: 8px;
+}
+.bar-nav {
+  position: fixed;
+  top: 50px;
+  left: 49px;
+  right: 0px;
+  background-color: #eee;
+  height: 49px;
+  border-bottom: 1px solid #000;
+}
+.bar-nav li {
+  display: inline-block;
+  clear: both;
+  border: 1px solid #000;
+  border-left: 0;
+  width: 48px;
+  height: 49px;
+  margin-top: -1px;
+}
+.bar-nav li > img {
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
