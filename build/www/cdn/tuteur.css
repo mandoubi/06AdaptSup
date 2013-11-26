@@ -42,8 +42,7 @@ ul {
   left: 0;
   bottom: 0;
   background-color: #eee;
-  width: 49px;
-  border-right: 1px solid #000;
+  width: 48px;
 }
 #bar-outil li {
   clear: both;
@@ -91,15 +90,14 @@ ul {
 .bar-nav {
   position: fixed;
   top: 50px;
-  left: 49px;
+  left: 48px;
   right: 0px;
   background-color: #eee;
-  height: 49px;
-  border-bottom: 1px solid #000;
+  height: 48px;
 }
 .bar-nav li {
   display: inline-block;
-  clear: both;
+  float: left;
   border: 1px solid #000;
   border-left: 0;
   width: 48px;
