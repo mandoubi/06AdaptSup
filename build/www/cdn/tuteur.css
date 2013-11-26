@@ -36,6 +36,9 @@ ul {
   margin-bottom: 10px;
   list-style: none;
 }
+li:hover {
+  background-color: #ddd;
+}
 #bar-outil {
   position: fixed;
   top: 50px;
@@ -72,6 +75,10 @@ ul {
 }
 #bar-outil li input:checked ~ ul {
   display: block;
+  background-color: #ddf;
+}
+#bar-outil li input:checked ~ label {
+  background-color: #bbf;
 }
 .multi-icones > * {
   position: absolute;
